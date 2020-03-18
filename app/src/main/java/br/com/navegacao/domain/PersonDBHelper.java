@@ -14,13 +14,13 @@ import br.com.navegacao.PessoaAcesso;
 
 public class PersonDBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "people.db";
-    private static final int DATABASE_VERSION = 1 ;
-    public static final String TABLE_NAME = "People";
+    public static final String DATABASE_NAME = "pessoas.db";
+    private static final int DATABASE_VERSION = 1;
+    public static final String NOME_TABELA = "Pessoas";
     public static final String COLUMN_ID = "_id";
-    public static final String COLUMN_PERSON_NAME = "name";
-    public static final String COLUMN_PERSON_AGE = "age";
-    public static final String COLUMN_PERSON_OCCUPATION = "occupation";
+    public static final String NOME = "nome";
+    public static final String IDADE = "idade";
+    public static final String OCUPACAO = "ocupacao";
 
 
     public PersonDBHelper(Context context) {
@@ -29,30 +29,30 @@ public class PersonDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(" CREATE TABLE " + TABLE_NAME + " (" +
+        db.execSQL(" CREATE TABLE " + NOME_TABELA + " (" +
                 COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
-                COLUMN_PERSON_NAME + " TEXT NOT NULL, " +
-                COLUMN_PERSON_AGE + " NUMBER NOT NULL, " +
-                COLUMN_PERSON_OCCUPATION + " TEXT NOT NULL);"
+                NOME + " TEXT NOT NULL, " +
+                IDADE + " NUMBER NOT NULL, " +
+                OCUPACAO + " TEXT NOT NULL);"
         );
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // you can implement here migration process
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + NOME_TABELA);
         this.onCreate(db);
     }
 
 
-    public void saveNewPerson(PessoaAcesso pessoaAcesso) {
+    public void salvarCadastro(PessoaAcesso pessoaAcesso) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(COLUMN_PERSON_NAME, pessoaAcesso.getName());
-        values.put(COLUMN_PERSON_AGE, pessoaAcesso.getAge());
-        values.put(COLUMN_PERSON_OCCUPATION, pessoaAcesso.getOccupation());
+        values.put(NOME, pessoaAcesso.getNome());
+        values.put(IDADE, pessoaAcesso.getIdade());
+        values.put(OCUPACAO, pessoaAcesso.getOcupacao());
         // insert
-        db.insert(TABLE_NAME,null, values);
+        db.insert(NOME_TABELA,null, values);
         db.close();
     }
 
@@ -61,10 +61,10 @@ public class PersonDBHelper extends SQLiteOpenHelper {
         String query;
         if(filter.equals("")){
             //regular query
-            query = "SELECT  * FROM " + TABLE_NAME;
+            query = "SELECT  * FROM " + NOME_TABELA;
         }else{
             //filter results by filter option provided
-            query = "SELECT  * FROM " + TABLE_NAME + " ORDER BY "+ filter;
+            query = "SELECT  * FROM " + NOME_TABELA + " ORDER BY "+ filter;
         }
 
         List<PessoaAcesso> personLinkedList = new LinkedList<>();
@@ -77,9 +77,9 @@ public class PersonDBHelper extends SQLiteOpenHelper {
                 pessoaAcesso = new PessoaAcesso();
 
                 pessoaAcesso.setId(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)));
-                pessoaAcesso.setName(cursor.getString(cursor.getColumnIndex(COLUMN_PERSON_NAME)));
-                pessoaAcesso.setAge(cursor.getString(cursor.getColumnIndex(COLUMN_PERSON_AGE)));
-                pessoaAcesso.setOccupation(cursor.getString(cursor.getColumnIndex(COLUMN_PERSON_OCCUPATION)));
+                pessoaAcesso.setNome(cursor.getString(cursor.getColumnIndex(NOME)));
+                pessoaAcesso.setIdade(cursor.getString(cursor.getColumnIndex(IDADE)));
+                pessoaAcesso.setOcupacao(cursor.getString(cursor.getColumnIndex(OCUPACAO)));
                 personLinkedList.add(pessoaAcesso);
 
             } while (cursor.moveToNext());
@@ -90,7 +90,7 @@ public class PersonDBHelper extends SQLiteOpenHelper {
     /**Query only 1 record**/
     public PessoaAcesso getPerson(long id){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT  * FROM " + TABLE_NAME + " WHERE _id="+ id;
+        String query = "SELECT  * FROM " + NOME_TABELA + " WHERE _id="+ id;
         Cursor cursor = db.rawQuery(query, null);
 
         PessoaAcesso receivedPerson = new PessoaAcesso();
@@ -98,28 +98,26 @@ public class PersonDBHelper extends SQLiteOpenHelper {
 
             cursor.moveToFirst();
 
-            receivedPerson.setName(cursor.getString(cursor.getColumnIndex(COLUMN_PERSON_NAME)));
-            receivedPerson.setAge(cursor.getString(cursor.getColumnIndex(COLUMN_PERSON_AGE)));
-            receivedPerson.setOccupation(cursor.getString(cursor.getColumnIndex(COLUMN_PERSON_OCCUPATION)));
+            receivedPerson.setNome(cursor.getString(cursor.getColumnIndex(NOME)));
+            receivedPerson.setIdade(cursor.getString(cursor.getColumnIndex(IDADE)));
+            receivedPerson.setOcupacao(cursor.getString(cursor.getColumnIndex(OCUPACAO)));
         }
         return receivedPerson;
     }
 
 
     /**delete record**/
-    public void deletePersonRecord(long id, Context context) {
+    public void deletarCadastro(long id, Context context) {
         SQLiteDatabase db = this.getWritableDatabase();
-
-        db.execSQL("DELETE FROM "+TABLE_NAME+" WHERE _id='"+id+"'");
-        //Toast.makeText(context, "Deleted successfully.", Toast.LENGTH_SHORT).show();
+        db.execSQL("DELETE FROM "+NOME_TABELA+" WHERE _id='"+id+"'");
     }
 
     /**update record**/
-    public void updatePersonRecord(long personId, Context context, PessoaAcesso updatedperson) {
+    public void atualizarCadastro(long personId, Context context, PessoaAcesso updatedperson) {
         SQLiteDatabase db = this.getWritableDatabase();
 
-        db.execSQL("UPDATE  "+TABLE_NAME+" SET name ='"+ updatedperson.getName() + "', age ='"
-                + updatedperson.getAge()+ "', occupation ='"+ updatedperson.getOccupation()
+        db.execSQL("UPDATE  "+NOME_TABELA+" SET nome ='"+ updatedperson.getNome() + "', idade ='"
+                + updatedperson.getIdade()+ "', ocupacao ='"+ updatedperson.getOcupacao()
                 + "'  WHERE _id='" + personId + "'");
     }
 }

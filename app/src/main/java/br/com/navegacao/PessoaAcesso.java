@@ -7,33 +7,33 @@ public class PessoaAcesso {
     private String senha;
     private String telefone;
     private String email;
-    private String name;
-    private String age;
-    private String occupation;
+    private String nome;
+    private String idade;
+    private String ocupacao;
 
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getAge() {
-        return age;
+    public String getIdade() {
+        return idade;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setIdade(String idade) {
+        this.idade = idade;
     }
 
-    public String getOccupation() {
-        return occupation;
+    public String getOcupacao() {
+        return ocupacao;
     }
 
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
+    public void setOcupacao(String ocupacao) {
+        this.ocupacao = ocupacao;
     }
 
 
@@ -82,9 +82,9 @@ public class PessoaAcesso {
     }
 
     //CONSTRUTOR PESSOA
-    public PessoaAcesso(String name, String age, String occupation) {
-        this.name = name;
-        this.age = age;
-        this.occupation = occupation;
+    public PessoaAcesso(String nome, String idade, String ocupacao) {
+        this.nome = nome;
+        this.idade = idade;
+        this.ocupacao = ocupacao;
     }
 }

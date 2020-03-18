@@ -5,4 +5,12 @@
     <color name="colorAccent">#4ca8e6</color>
     <color name="colorDefaultButton">#004d80</color>
     <color name="colorPressed">#80ccff</color>
+
+    <!-- CORES BOTOES -->
+    <color name="colorOk">#0099e6</color>
+    <color name="colorPressedOk">#66ccff</color>
+    <color name="colorCancel">#bfbfbf</color>
+    <color name="colorPressedCancel">#f2f2f2</color>
+
+
 </resources>

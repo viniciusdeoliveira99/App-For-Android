@@ -12,6 +12,7 @@
     <string name="menu_config">Configurações</string>
     <string name="menu_exit">Exit</string>
 
+    <!-- CADASTRO -->
     <string name="nome">Nome</string>
     <string name="idade">Idade</string>
     <string name="ocupacao">Ocupação</string>
@@ -21,6 +22,8 @@
     <string name="email">E-mail</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="atualizar">Atualizar</string>
+
     <string name="content">User Image</string>
     <string name="log">Login</string>
     <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>
