@@ -44,18 +44,28 @@
             android:maxLength="50"
             android:inputType="textEmailAddress"/>
 
-        <Button
-            android:id="@+id/btnCadastrar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorAccent"
-            android:text="@string/cadastrar"/>
-        <Button
-            android:id="@+id/btnCancelar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
-            android:text="@string/cancelar"/>
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/botaoCadastrarUsuario"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="35dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cadastrar"
+                    android:background="@drawable/seletor_ok"/>
+                <Button
+                    android:id="@+id/botaoCancelarCadastro"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancelar"
+                    android:background="@drawable/seletor_cancelar"/>
 
+        </LinearLayout>
 </LinearLayout>
