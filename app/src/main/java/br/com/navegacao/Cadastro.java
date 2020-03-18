@@ -33,8 +33,8 @@ public class Cadastro extends AppCompatActivity {
         senha = (EditText)findViewById(R.id.senha);
         telefone = (EditText)findViewById(R.id.telefone);
         email = (EditText)findViewById(R.id.email);
-        cadastrar = (Button)findViewById(R.id.btnCadastrar);
-        cancelar = (Button)findViewById(R.id.btnCancelar);
+        cadastrar = (Button)findViewById(R.id.botaoCadastrarUsuario);
+        cancelar = (Button)findViewById(R.id.botaoCancelarCadastro);
 
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
