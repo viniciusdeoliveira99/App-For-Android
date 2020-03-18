@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.GravityCompat;
@@ -57,29 +58,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void setupNavDrawer() {
-        final ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            // Ícone do menu do nav drawer
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_actual);
-            actionBar.setDisplayHomeAsUpEnabled(true);
 
-
-            drawerLayout = findViewById(R.id.drawer_layout);
-            NavigationView navigationView = findViewById(R.id.nav_view);
-
-            if (navigationView != null && drawerLayout != null) {
-                navigationView.setNavigationItemSelectedListener(
-                        new NavigationView.OnNavigationItemSelectedListener() {
-                            @Override
-                            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                                menuItem.setChecked(true);
-                                closeDrawer();
-                                // Trata o evento do menu
-                                onNavDrawerItemSelected(menuItem);
-                                return true;
-                            }
-                        });
+        toolbar.setNavigationIcon(R.drawable.ic_menu_actual);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDrawer();
             }
+        });
+        drawerLayout = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+
+        if (navigationView != null && drawerLayout != null) {
+            navigationView.setNavigationItemSelectedListener(
+                    new NavigationView.OnNavigationItemSelectedListener() {
+                        @Override
+                        public boolean onNavigationItemSelected(MenuItem menuItem) {
+                            menuItem.setChecked(true);
+                            closeDrawer();
+                            // Trata o evento do menu
+                            onNavDrawerItemSelected(menuItem);
+                            return true;
+                        }
+                    });
         }
     }
 
@@ -145,10 +146,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-    public boolean onOpcaoSelecionada(MenuItem item){
-
 
     // Abre o menu lateral
     protected void openDrawer() {
