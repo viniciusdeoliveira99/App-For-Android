@@ -86,6 +86,30 @@ public class PersonDBHelper extends SQLiteOpenHelper {
         }
         return personLinkedList;
     }
+	
+	//LISTA OS DADOS
+	public List<PessoaAcesso> cadastroList() {
+        String query;
+        query = "SELECT * FROM " + NOME_TABELA;
+
+        List<PessoaAcesso> personLinkedList = new LinkedList<>();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+        PessoaAcesso pessoaAcesso;
+
+        if (cursor.moveToFirst()) {
+            do {
+                pessoaAcesso = new PessoaAcesso();
+                pessoaAcesso.setId(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)));
+                pessoaAcesso.setNome(cursor.getString(cursor.getColumnIndex(NOME)));
+                pessoaAcesso.setIdade(cursor.getString(cursor.getColumnIndex(IDADE)));
+                pessoaAcesso.setOcupacao(cursor.getString(cursor.getColumnIndex(OCUPACAO)));
+                personLinkedList.add(pessoaAcesso);
+            } while (cursor.moveToNext());
+        }
+        return personLinkedList;
+    }
+	
 
     /**Query only 1 record**/
     public PessoaAcesso getPerson(long id){

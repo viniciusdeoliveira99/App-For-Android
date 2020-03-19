@@ -15,6 +15,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.GravityCompat;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -30,6 +32,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Toast;
 
+import br.com.navegacao.fragment.CadastroFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     protected DrawerLayout drawerLayout;
@@ -39,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+		
+		FragmentManager fm = getSupportFragmentManager();
+		
+		if (savedInstanceState == null) {
+            FragmentTransaction ft = fm.beginTransaction();
+            CadastroFragment frag1 = new CadastroFragment();
+            ft.add(R.id.layoutFrag, frag1, "CadastroFragment");
+            ft.commit();
+        }
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
@@ -52,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toast("FAB action");
+                Intent intent = new Intent(MainActivity.this, AddUsuario.class);
+                startActivity(intent);
             }
         });
     }
 
     protected void setupNavDrawer() {
-
         toolbar.setNavigationIcon(R.drawable.ic_menu_actual);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
