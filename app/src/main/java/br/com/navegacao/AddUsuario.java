@@ -95,7 +95,7 @@ public class AddUsuario extends AppCompatActivity {
             //create new person
             PessoaAcesso person = new PessoaAcesso(nome, idade, ocupacao);
             dbHelper.salvarCadastro(person);
-            toast("Usuário: " + person.getNome() + " adicionada.");
+            toast("Usuário: " + person.getNome() + " add.");
             goBackHome();
         }
     }

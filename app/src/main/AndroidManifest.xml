@@ -29,5 +29,6 @@
         <activity android:name=".Cadastro" />
         <activity android:name=".AddUsuario" />
         <activity android:name=".AtualizarUsuario" />
+        <activity android:name=".CadastroActivity" />
     </application>
 </manifest>
