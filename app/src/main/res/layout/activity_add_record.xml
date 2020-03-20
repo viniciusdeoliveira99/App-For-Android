@@ -32,16 +32,16 @@
         android:hint="@string/ocupacao" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp" >
 
         <Button
             android:id="@+id/addUsuario"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:background="@drawable/seletor_ok"
             android:textColor="@color/colorPrimaryDark"
             android:text="@string/cadastrar"/>
@@ -49,6 +49,7 @@
             android:id="@+id/botaoCancelar"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/seletor_cancelar"
             android:textColor="@color/colorPrimaryDark"
             android:text="@string/cancelar"/>

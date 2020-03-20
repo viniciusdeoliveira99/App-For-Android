@@ -43,15 +43,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-		
-		FragmentManager fm = getSupportFragmentManager();
-		
-		if (savedInstanceState == null) {
-            FragmentTransaction ft = fm.beginTransaction();
-            CadastroFragment frag1 = new CadastroFragment();
-            ft.add(R.id.layoutFrag, frag1, "CadastroFragment");
-            ft.commit();
-        }
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
