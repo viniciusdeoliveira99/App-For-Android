@@ -104,7 +104,7 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
                         notifyItemRemoved(position);
                         notifyItemRangeChanged(position, pessoaLista.size());
                         notifyDataSetChanged();
-                        Toast.makeText(newContext, "Usuário: " + pessoa.getNome() + " excluída.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(newContext, "Usuário: " + pessoa.getNome() + " deletado(a).", Toast.LENGTH_SHORT).show();
                     }
                 });
                 adb.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
