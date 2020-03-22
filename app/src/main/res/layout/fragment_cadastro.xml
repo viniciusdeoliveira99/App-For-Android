@@ -16,7 +16,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:clipToPadding="false"
         android:divider="@null"
-        android:dividerHeight="10dp"
+        android:dividerHeight="0dp"
         android:listSelector="@android:color/transparent"
         android:scrollbarStyle="outsideOverlay"
         android:scrollbars="vertical" />

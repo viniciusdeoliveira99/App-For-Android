@@ -20,12 +20,12 @@ import br.com.navegacao.domain.PersonDBHelper;
 
 
 public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder> {
-    private List<PessoaAcesso> pessoaLista;
-    private Context newContext;
-    private RecyclerView newRecyclerView;
+    protected List<PessoaAcesso> pessoaLista;
+    protected Context mContext;
+    protected RecyclerView mRecyclerView;
 
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    protected class ViewHolder extends RecyclerView.ViewHolder {
         public TextView pessoaNome;
         public TextView pessoaIdade;
         public TextView pessoaOcupacao;
@@ -56,8 +56,8 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
 
     public PessoaAdapter(List<PessoaAcesso> myDataset, Context context, RecyclerView recyclerView) {
         pessoaLista = myDataset;
-        context = newContext;
-        recyclerView = newRecyclerView;
+        recyclerView = mRecyclerView;
+        this.mContext = context;
     }
 
     @Override
@@ -82,9 +82,9 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder adb = new AlertDialog.Builder(newContext);
+                AlertDialog.Builder adb = new AlertDialog.Builder(mContext);
                 adb.setTitle("Escolha uma opção:");
-                adb.setMessage("Atualiza ou deleta usuário?");
+                adb.setMessage("Atualiza ou exclui usuário?");
                 adb.setPositiveButton("Atualizar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -96,15 +96,15 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
                 adb.setNeutralButton("Deletar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        PersonDBHelper dbHelper = new PersonDBHelper(newContext);
-                        dbHelper.deletarCadastro(pessoa.getId(), newContext);
+                        PersonDBHelper dbHelper = new PersonDBHelper(mContext);
+                        dbHelper.deletarCadastro(pessoa.getId(), mContext);
 
                         pessoaLista.remove(position);
-                        newRecyclerView.removeViewAt(position);
+                        mRecyclerView.removeViewAt(position);
                         notifyItemRemoved(position);
                         notifyItemRangeChanged(position, pessoaLista.size());
                         notifyDataSetChanged();
-                        Toast.makeText(newContext, "Usuário: " + pessoa.getNome() + " deletado(a).", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "Usuário: " + pessoa.getNome() + " deletado(a).", Toast.LENGTH_SHORT).show();
                     }
                 });
                 adb.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
@@ -119,9 +119,9 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
     }
 
     private void goToUpdateActivity(long personId){
-        Intent goToUpdate = new Intent(newContext, AtualizarUsuario.class);
+        Intent goToUpdate = new Intent(mContext, AtualizarUsuario.class);
         goToUpdate.putExtra("USER_ID", personId);
-        newContext.startActivity(goToUpdate);
+        mContext.startActivity(goToUpdate);
     }
 
     // Return the size of your dataset (invoked by the layout manager)

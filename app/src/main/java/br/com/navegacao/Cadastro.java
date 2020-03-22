@@ -46,8 +46,9 @@ public class Cadastro extends AppCompatActivity {
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Cadastro.this, Login.class);
-                startActivity(intent);
+                Cadastro.super.onBackPressed();
+//                Intent intent = new Intent(Cadastro.this, Login.class);
+//                startActivity(intent);
             }
         });
     }

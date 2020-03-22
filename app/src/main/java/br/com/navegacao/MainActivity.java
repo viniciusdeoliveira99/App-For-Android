@@ -1,6 +1,5 @@
 package br.com.navegacao;
 
-import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,14 +15,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     protected DrawerLayout drawerLayout;
     protected Toolbar toolbar;
+    protected DBHelper dbHelper;
+    protected PessoaAcesso pessoaAcesso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
         });
         drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+        View hView =  navigationView.getHeaderView(0);
+        TextView nav_user = (TextView)hView.findViewById(R.id.usuarioLogado);
+        dbHelper = new DBHelper(this);
 
         if (navigationView != null && drawerLayout != null) {
             navigationView.setNavigationItemSelectedListener(

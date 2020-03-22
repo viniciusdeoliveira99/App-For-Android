@@ -3,6 +3,7 @@ package br.com.navegacao;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,8 +47,9 @@ public class AddUsuario extends AppCompatActivity {
         botaoCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddUsuario.this, MainActivity.class);
-                startActivity(intent);
+                AddUsuario.super.onBackPressed();
+//                Intent intent = new Intent(AddUsuario.this, MainActivity.class);
+//                startActivity(intent);
             }
         });
     }
@@ -69,6 +71,9 @@ public class AddUsuario extends AppCompatActivity {
                 }
             });
             adb.show();
+            nomeUsuario.setHintTextColor(Color.RED);
+            nomeUsuario.requestFocus();
+
         }else if(idade.isEmpty()){
             AlertDialog.Builder adb = new AlertDialog.Builder(AddUsuario.this);
             adb.setTitle("Atenção");
@@ -80,6 +85,8 @@ public class AddUsuario extends AppCompatActivity {
                 }
             });
             adb.show();
+            idadeUsuario.setHintTextColor(Color.RED);
+
         }else if(ocupacao.isEmpty()){
             AlertDialog.Builder adb = new AlertDialog.Builder(AddUsuario.this);
             adb.setTitle("Atenção");
@@ -91,6 +98,8 @@ public class AddUsuario extends AppCompatActivity {
                 }
             });
             adb.show();
+            ocupacaoUsuario.setHintTextColor(Color.RED);
+
         }else{
             //create new person
             PessoaAcesso person = new PessoaAcesso(nome, idade, ocupacao);

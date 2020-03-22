@@ -24,6 +24,8 @@
     <string name="cancelar">Cancelar</string>
     <string name="atualizar">Atualizar</string>
 
+
+    <string name="filter">Organizar</string>
     <string name="content">User Image</string>
     <string name="log">Login</string>
     <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>

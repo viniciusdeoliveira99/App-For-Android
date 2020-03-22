@@ -86,6 +86,7 @@ public class PersonDBHelper extends SQLiteOpenHelper {
         }
         return personLinkedList;
     }
+
 	
 	//LISTA OS DADOS
 	public List<PessoaAcesso> cadastroList() {

@@ -3,8 +3,8 @@
     <color name="colorPrimary">#003d99</color>
     <color name="colorPrimaryDark">#001433</color>
     <color name="colorAccent">#4ca8e6</color>
-    <color name="colorDefaultButton">#004d80</color>
-    <color name="colorPressed">#80ccff</color>
+    <color name="colorDefaultButton">#008ae6</color>
+    <color name="colorPressed">#33adff</color>
 
     <!-- CORES BOTOES -->
     <color name="colorOk">#0099e6</color>

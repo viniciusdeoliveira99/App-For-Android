@@ -3,6 +3,7 @@ package br.com.navegacao;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -65,8 +66,9 @@ public class AtualizarUsuario extends AppCompatActivity {
         botaoCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AtualizarUsuario.this, MainActivity.class);
-                startActivity(intent);
+                AtualizarUsuario.super.onBackPressed();
+//                Intent intent = new Intent(AtualizarUsuario.this, MainActivity.class);
+//                startActivity(intent);
             }
         });
     }
@@ -87,6 +89,8 @@ public class AtualizarUsuario extends AppCompatActivity {
                 }
             });
             adb.show();
+            usuarioNome.setHintTextColor(Color.RED);
+
         }else if(idade.isEmpty()){
             AlertDialog.Builder adb = new AlertDialog.Builder(AtualizarUsuario.this);
             adb.setTitle("Atenção");
@@ -98,6 +102,8 @@ public class AtualizarUsuario extends AppCompatActivity {
                 }
             });
             adb.show();
+            usuarioIdade.setHintTextColor(Color.RED);
+
         }else if(ocupacao.isEmpty()){
             AlertDialog.Builder adb = new AlertDialog.Builder(AtualizarUsuario.this);
             adb.setTitle("Atenção");
@@ -109,6 +115,7 @@ public class AtualizarUsuario extends AppCompatActivity {
                 }
             });
             adb.show();
+            usuarioOcupacao.setHintTextColor(Color.RED);
         }else{
             PessoaAcesso updatedPerson = new PessoaAcesso(nome, idade, ocupacao);
             dbHelper.atualizarCadastro(receivedPersonId, this, updatedPerson);
