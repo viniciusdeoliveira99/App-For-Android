@@ -110,30 +110,45 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public List<PessoaAcesso> buscarDados(){
-      List<PessoaAcesso> listarDados = new ArrayList<>();
+        List<PessoaAcesso> listarDados = new ArrayList<>();
 
-      try{
-        SQLiteDatabase db = getWritableDatabase();
-        Cursor cursor = db.rawQuery("select " + COLUMN_ID + ", " + COLUMN_USUARIO + ", " + COLUMN_SENHA + " from " + TABLE_NAME, null);
+        try{
+            SQLiteDatabase db = getWritableDatabase();
+            Cursor cursor = db.rawQuery("select " + COLUMN_ID + ", " + COLUMN_USUARIO + ", " + COLUMN_SENHA + " from " + TABLE_NAME, null);
 
-        if(cursor.moveToFirst()){
+            if(cursor.moveToFirst()){
 
-          do{
-            PessoaAcesso pessoaAcesso = new PessoaAcesso();
-            pessoaAcesso.setId(cursor.getLong(0));
-            pessoaAcesso.setUsuario(cursor.getString(1));
-            pessoaAcesso.setSenha(cursor.getString(2));
+                do{
+                    PessoaAcesso pessoaAcesso = new PessoaAcesso();
+                    pessoaAcesso.setId(cursor.getLong(0));
+                    pessoaAcesso.setUsuario(cursor.getString(1));
+                    pessoaAcesso.setSenha(cursor.getString(2));
 
-            listarDados.add(pessoaAcesso);
+                    listarDados.add(pessoaAcesso);
 
-          }while(cursor.moveToNext());
+                }while(cursor.moveToNext());
+            }
+            db.close();
+
+        }catch(SQLException error){
+            error.getMessage();
         }
-        db.close();
-
-      }catch(SQLException error){
-        error.getMessage();
-      }
-      return listarDados;
+        return listarDados;
     }
 
+
+    public PessoaAcesso getDados(long id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT  * FROM " + TABLE_NAME + " WHERE _id="+ id;
+        Cursor cursor = db.rawQuery(query, null);
+
+        PessoaAcesso receivedPerson = new PessoaAcesso();
+        if(cursor.getCount() > 0) {
+
+            cursor.moveToFirst();
+            receivedPerson.setUsuario(cursor.getString(cursor.getColumnIndex(COLUMN_USUARIO)));
+            receivedPerson.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_EMAIL)));
+        }
+        return receivedPerson;
+    }
 }

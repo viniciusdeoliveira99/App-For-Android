@@ -18,6 +18,8 @@ import android.view.Menu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
 
@@ -27,11 +29,22 @@ public class MainActivity extends AppCompatActivity {
     protected Toolbar toolbar;
     protected DBHelper dbHelper;
     protected PessoaAcesso pessoaAcesso;
+    private long pessoaID;
+    protected NavigationView navView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        try {
+            //get intent to get person id
+            pessoaID = getIntent().getLongExtra("USER_ID", 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
@@ -65,13 +78,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         drawerLayout = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        View hView =  navigationView.getHeaderView(0);
-        TextView nav_user = (TextView)hView.findViewById(R.id.usuarioLogado);
-        dbHelper = new DBHelper(this);
+        navView = findViewById(R.id.nav_view);
 
-        if (navigationView != null && drawerLayout != null) {
-            navigationView.setNavigationItemSelectedListener(
+//        dbHelper = new DBHelper(this);
+//        View header = navView.getHeaderView(0);
+//        PessoaAcesso pessoa = dbHelper.getDados(pessoaID);
+//        TextView usuario = (TextView)header.findViewById(R.id.usuarioLogado);
+//        TextView email = (TextView)header.findViewById(R.id.usuarioEmail);
+//
+//        usuario.setText(pessoa.getUsuario());
+//        email.setText(pessoa.getEmail());
+
+
+        if (drawerLayout != null) {
+            navView.setNavigationItemSelectedListener(
                     new NavigationView.OnNavigationItemSelectedListener() {
                         @Override
                         public boolean onNavigationItemSelected(MenuItem menuItem) {
@@ -161,5 +181,4 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
     }
-
 }
