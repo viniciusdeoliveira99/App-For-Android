@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         if (toolbar != null) {
             setSupportActionBar(toolbar);
         }
+
+        //SETUP THE NAV DRAWER
         setupNavDrawer();
 
         //FAB
@@ -80,14 +82,16 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         navView = findViewById(R.id.nav_view);
 
-//        dbHelper = new DBHelper(this);
-//        View header = navView.getHeaderView(0);
-//        PessoaAcesso pessoa = dbHelper.getDados(pessoaID);
-//        TextView usuario = (TextView)header.findViewById(R.id.usuarioLogado);
-//        TextView email = (TextView)header.findViewById(R.id.usuarioEmail);
-//
-//        usuario.setText(pessoa.getUsuario());
-//        email.setText(pessoa.getEmail());
+        pessoaAcesso = new PessoaAcesso();
+        dbHelper = new DBHelper(this);
+        pessoaAcesso = dbHelper.getDados(pessoaID);
+
+        View header = navView.getHeaderView(0);
+        TextView user = header.findViewById(R.id.usuarioLogado);
+        TextView email = header.findViewById(R.id.usuarioEmail);
+
+        user.setText(pessoaAcesso.getUsuario());
+        email.setText(pessoaAcesso.getEmail());
 
 
         if (drawerLayout != null) {
@@ -123,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         startActivity(new Intent(MainActivity.this, Login.class));
+                        finish();
                     }
                 });
                 adb.setNegativeButton("Não", new DialogInterface.OnClickListener() {
@@ -181,4 +186,5 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
     }
+
 }

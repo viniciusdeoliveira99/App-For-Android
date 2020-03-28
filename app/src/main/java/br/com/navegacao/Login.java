@@ -59,28 +59,31 @@ public class Login extends AppCompatActivity {
         dbHelper = new DBHelper(this);
 
         if (!user.isEmpty() && !pass.isEmpty() && pass.length() >= 4) {
+
             List<PessoaAcesso> lista = dbHelper.buscarDados();
             for (int i = 0; i < lista.size(); i++) {
+
                 PessoaAcesso pessoaAcesso = (PessoaAcesso) lista.get(i);
 
                 if (user.equals(pessoaAcesso.getUsuario()) && pass.equals(pessoaAcesso.getSenha())){
                     Intent intent = new Intent(Login.this, MainActivity.class);
                     startActivity(intent);
                     toast("Bem-vindo(a) " + pessoaAcesso.getUsuario());
-
-                }else{
-                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this);
-                    adb.setTitle("ERRO");
-                    adb.setMessage("Dados incorretos ou não existem!");
-                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-                    adb.show();
-                    erro();
                 }
+
+//                else{
+////                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this);
+////                    adb.setTitle("ERRO");
+////                    adb.setMessage("Dados incorretos ou não existem!");
+////                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+////                        @Override
+////                        public void onClick(DialogInterface dialog, int which) {
+////                            dialog.dismiss();
+////                        }
+////                    });
+////                    adb.show();
+////                    erro();
+////                }
             }
 
         }else {

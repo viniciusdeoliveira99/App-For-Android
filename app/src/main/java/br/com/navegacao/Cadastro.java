@@ -70,7 +70,7 @@ public class Cadastro extends AppCompatActivity {
         if(!user.isEmpty() && !pass.isEmpty() && !phone.isEmpty() && !mail.isEmpty() && pass.length() >= 4) {
             dbHelper.create(p);
             goBackMain();
-            toast("Cadastro realizado!");
+            toast("[Usuário: " + p.getUsuario() + " cadastrado(a)]");
         }else{
             AlertDialog.Builder adb = new AlertDialog.Builder(Cadastro.this);
             adb.setTitle("Atenção");
