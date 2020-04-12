@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 import android.view.Menu;
 import android.widget.TextView;
@@ -22,6 +23,7 @@ import org.w3c.dom.Text;
 
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
+import br.com.navegacao.fragment.ConfiguracoesFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         try {
             //get intent to get person id
@@ -54,15 +55,6 @@ public class MainActivity extends AppCompatActivity {
         //SETUP THE NAV DRAWER
         setupNavDrawer();
 
-        //FAB
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AddUsuario.class);
-                startActivity(intent);
-            }
-        });
 
         if (savedInstanceState == null) {
             CadastroFragment frag = new CadastroFragment();
@@ -114,11 +106,11 @@ public class MainActivity extends AppCompatActivity {
     private void onNavDrawerItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.nav_home:
-                toast("Home");
                 break;
             case R.id.nav_tools:
-                toast("Configurações");
+                replaceFragment(new ConfiguracoesFragment());
                 break;
+
             case R.id.nav_exit:
                 AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
                 adb.setTitle("Confirmação");
@@ -185,6 +177,10 @@ public class MainActivity extends AppCompatActivity {
         if (drawerLayout != null) {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
+    }
+
+    private void replaceFragment(Fragment frag){
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragLayout, frag).commit();
     }
 
 }

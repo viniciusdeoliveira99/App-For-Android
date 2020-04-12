@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,6 +78,10 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
         holder.pessoaNome.setText("Nome: " + pessoa.getNome());
         holder.pessoaIdade.setText("Idade: " + pessoa.getIdade());
         holder.pessoaOcupacao.setText("Ocupacao: " + pessoa.getOcupacao());
+
+        holder.pessoaNome.setTextColor(Color.rgb(86, 171, 214));
+        holder.pessoaIdade.setTextColor(Color.rgb(86, 171, 214));
+        holder.pessoaOcupacao.setTextColor(Color.rgb(86, 171, 214));
 
         //listen to single view layout click
         holder.layout.setOnClickListener(new View.OnClickListener() {

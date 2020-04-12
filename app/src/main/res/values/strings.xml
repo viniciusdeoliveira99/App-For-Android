@@ -31,4 +31,6 @@
     <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>
     <string name="inserir">Clique para cadastrar novo usuário</string>
     <string name="exit">Encerrar</string>
+
+    <string name="receberEmail">Receber e-mail de alerta</string>
 </resources>

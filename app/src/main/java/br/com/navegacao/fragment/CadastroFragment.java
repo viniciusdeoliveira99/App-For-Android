@@ -1,5 +1,6 @@
 package br.com.navegacao.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,6 +21,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import br.com.navegacao.AddUsuario;
+import br.com.navegacao.MainActivity;
 import br.com.navegacao.R;
 import br.com.navegacao.adapter.PessoaAdapter;
 import br.com.navegacao.domain.PersonDBHelper;
@@ -37,6 +42,17 @@ public class CadastroFragment extends BaseFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_cadastro, container, false);
+
+		//FAB
+		FloatingActionButton fab = view.findViewById(R.id.fab);
+		fab.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent intent = new Intent(getContext(), AddUsuario.class);
+				startActivity(intent);
+			}
+		});
+
 		recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 		linearLayoutManager = new LinearLayoutManager(getActivity());
 		recyclerView.setLayoutManager(linearLayoutManager);
