@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
@@ -105,12 +104,18 @@ public class MainActivity extends AppCompatActivity {
     // Trata o evento do menu lateral
     private void onNavDrawerItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
+
+            //MENU HOME
             case R.id.nav_home:
-                break;
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
+                finish();
+
+            //MENU CONFIGURAÇÕES
             case R.id.nav_tools:
-                replaceFragment(new ConfiguracoesFragment());
+
                 break;
 
+            //MENU SAIR
             case R.id.nav_exit:
                 AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
                 adb.setTitle("Confirmação");
@@ -132,12 +137,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-
-
-    public void toast(String msg){
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

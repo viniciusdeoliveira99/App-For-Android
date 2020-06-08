@@ -69,21 +69,19 @@ public class Login extends AppCompatActivity {
                     Intent intent = new Intent(Login.this, MainActivity.class);
                     startActivity(intent);
                     toast("Bem-vindo(a) " + pessoaAcesso.getUsuario());
+                }else{
+                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this);
+                    adb.setTitle("ERRO");
+                    adb.setMessage("Dados incorretos ou não existem!");
+                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    adb.show();
+                    erro();
                 }
-
-//                else{
-////                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this);
-////                    adb.setTitle("ERRO");
-////                    adb.setMessage("Dados incorretos ou não existem!");
-////                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-////                        @Override
-////                        public void onClick(DialogInterface dialog, int which) {
-////                            dialog.dismiss();
-////                        }
-////                    });
-////                    adb.show();
-////                    erro();
-////                }
             }
 
         }else {

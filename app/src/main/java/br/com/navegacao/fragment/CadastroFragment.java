@@ -37,7 +37,6 @@ public class CadastroFragment extends BaseFragment {
 	private PessoaAdapter adapter;
 	private String filter = "";
 
-
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
@@ -71,7 +70,6 @@ public class CadastroFragment extends BaseFragment {
 		recyclerView.setAdapter(adapter);
 	}
 
-
 	//SPINNER
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -80,11 +78,9 @@ public class CadastroFragment extends BaseFragment {
 
 		MenuItem item = menu.findItem(R.id.filterSpinner);
 		final Spinner spinner = (Spinner) MenuItemCompat.getActionView(item);
-
 		final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),
 				R.array.filterOptions, android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
 
 		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
@@ -102,7 +98,6 @@ public class CadastroFragment extends BaseFragment {
 
 		spinner.setAdapter(adapter);
 	}
-
 
 	@Override
 	public void onResume() {

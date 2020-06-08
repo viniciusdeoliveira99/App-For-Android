@@ -74,7 +74,7 @@ public class Cadastro extends AppCompatActivity {
         }else{
             AlertDialog.Builder adb = new AlertDialog.Builder(Cadastro.this);
             adb.setTitle("Atenção");
-            adb.setMessage("Preencher todos os dados!");
+            adb.setMessage("Preencher todos os dados! \n" + "A senha deve conter 4 caracteres!");
             adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -87,9 +87,9 @@ public class Cadastro extends AppCompatActivity {
             telefone.setHintTextColor(Color.RED);
             email.setHintTextColor(Color.RED);
             usuario.requestFocus();
-            if(pass.length() < 4){
-                toast("A senha deve conter 4 caracteres!");
-            }
+            //            if(pass.length() < 4){
+//                toast("A senha deve conter 4 caracteres!");
+//            }
         }
     }
 
