@@ -2,7 +2,9 @@
   <dictionary name="DNAXIS">
     <words>
       <w>cadastro</w>
+      <w>configuracao</w>
       <w>erro</w>
+      <w>lista</w>
     </words>
   </dictionary>
 </component>

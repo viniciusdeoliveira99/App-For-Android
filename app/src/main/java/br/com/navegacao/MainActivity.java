@@ -3,7 +3,6 @@ package br.com.navegacao;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,13 +16,10 @@ import androidx.fragment.app.Fragment;
 
 import android.view.Menu;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
-import br.com.navegacao.fragment.ConfiguracoesFragment;
+import br.com.navegacao.fragment.ConfiguracaoFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,13 +35,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
-            //get intent to get person id
-            pessoaID = getIntent().getLongExtra("USER_ID", 1);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
@@ -54,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
         //SETUP THE NAV DRAWER
         setupNavDrawer();
 
+        //FAB ACTION
+        FloatingActionButton fab = findViewById(R.id.fab);
+		fab.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent intent = new Intent(MainActivity.this, AddUsuario.class);
+				startActivity(intent);
+			}
+		});
 
         if (savedInstanceState == null) {
             CadastroFragment frag = new CadastroFragment();
@@ -104,17 +102,14 @@ public class MainActivity extends AppCompatActivity {
     // Trata o evento do menu lateral
     private void onNavDrawerItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-
             //MENU HOME
             case R.id.nav_home:
-                startActivity(new Intent(MainActivity.this, MainActivity.class));
-                finish();
-
+                replaceFragment(new CadastroFragment());
+                break;
             //MENU CONFIGURAÇÕES
             case R.id.nav_tools:
-
+                replaceFragment(new ConfiguracaoFragment());
                 break;
-
             //MENU SAIR
             case R.id.nav_exit:
                 AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);

@@ -42,16 +42,15 @@ public class CadastroFragment extends BaseFragment {
 							 Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_cadastro, container, false);
 
-		//FAB
-		FloatingActionButton fab = view.findViewById(R.id.fab);
-		fab.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent = new Intent(getContext(), AddUsuario.class);
-				startActivity(intent);
-			}
-		});
-
+//		//FAB
+//		FloatingActionButton fab = view.findViewById(R.id.fab);
+//		fab.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View view) {
+//				Intent intent = new Intent(getContext(), AddUsuario.class);
+//				startActivity(intent);
+//			}
+//		});
 		recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 		linearLayoutManager = new LinearLayoutManager(getActivity());
 		recyclerView.setLayoutManager(linearLayoutManager);
