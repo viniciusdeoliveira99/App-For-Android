@@ -10,17 +10,14 @@ import android.view.ViewGroup;
 import android.widget.Switch;
 
 import br.com.navegacao.R;
+import br.com.navegacao.util.PrefsUtils;
 
-public class ConfiguracaoFragment extends Fragment {
+public class ConfiguracaoFragment extends android.preference.PreferenceFragment{
 
-    protected Switch aSwitch;
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.preferences);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View view = inflater.inflate(R.layout.fragment_configuracao, container, false);
-        aSwitch = (Switch) view.findViewById(R.id.alertaEmail);
-        return view;
+        //boolean b = PrefsUtils.isCheckPushOn(getContext());
     }
 }

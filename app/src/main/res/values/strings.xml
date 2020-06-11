@@ -33,7 +33,12 @@
     <string name="inserir">Clique para cadastrar novo usuário</string>
     <string name="exit">Encerrar</string>
 
-    <string name="receberEmail">Receber e-mail de alerta</string>
+    <!-- PREFERENCES -->
+    <string name="notificacoes">Notificações</string>
+    <string name="title">Navegação</string>
+    <string name="receberEmail">Receber alerta por e-mail</string>
+    <string name="modoNoturno">Modo noturno</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
