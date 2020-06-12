@@ -1514,7 +1514,6 @@ id addNome
 id addOcupacao
 id addUsuario
 id alertTitle
-id alertaEmail
 id all
 id always
 id async
@@ -1870,7 +1869,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_cadastro
-layout fragment_configuracao
+layout fragment_prefs
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1994,6 +1993,7 @@ string log
 string menu_config
 string menu_exit
 string menu_home
+string modoNoturno
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2036,6 +2036,7 @@ string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
 string nome
+string notificacoes
 string ocupacao
 string password_toggle_content_description
 string path_password_eye
@@ -2047,6 +2048,7 @@ string search_menu_title
 string senha
 string status_bar_notification_info_overflow
 string telefone
+string title
 string usuario
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -2831,6 +2833,7 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml preferences
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

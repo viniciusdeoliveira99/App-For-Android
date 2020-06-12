@@ -19,7 +19,6 @@ import android.widget.TextView;
 
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
-import br.com.navegacao.fragment.ConfiguracaoFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -102,14 +101,17 @@ public class MainActivity extends AppCompatActivity {
     // Trata o evento do menu lateral
     private void onNavDrawerItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
+			
             //MENU HOME
             case R.id.nav_home:
                 replaceFragment(new CadastroFragment());
                 break;
+				
             //MENU CONFIGURAÇÕES
             case R.id.nav_tools:
-                replaceFragment(new ConfiguracaoFragment());
+				startActivity(new Intent(this, ConfiguracoesActivity.class));
                 break;
+				
             //MENU SAIR
             case R.id.nav_exit:
                 AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);

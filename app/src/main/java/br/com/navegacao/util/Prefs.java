@@ -13,7 +13,7 @@ public class Prefs {
         SharedPreferences pref = context.getSharedPreferences(PREF_ID, 0);
         SharedPreferences.Editor editor = pref.edit();
         editor.putBoolean(flag, on);
-        editor.commit();
+        editor.apply();
     }
 
     public static boolean getBoolean(Context context, String flag) {
@@ -26,7 +26,7 @@ public class Prefs {
         SharedPreferences pref = context.getSharedPreferences(PREF_ID, 0);
         SharedPreferences.Editor editor = pref.edit();
         editor.putInt(flag, valor);
-        editor.commit();
+        editor.apply();
     }
 
     public static int getInteger(Context context, String flag) {
@@ -39,7 +39,7 @@ public class Prefs {
         SharedPreferences pref = context.getSharedPreferences(PREF_ID, 0);
         SharedPreferences.Editor editor = pref.edit();
         editor.putString(flag, valor);
-        editor.commit();
+        editor.apply();
     }
 
     public static String getString(Context context, String flag) {
