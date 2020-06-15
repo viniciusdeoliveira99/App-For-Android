@@ -14,9 +14,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
 import androidx.core.view.MenuItemCompat;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,7 +23,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import br.com.navegacao.AddUsuario;
-import br.com.navegacao.MainActivity;
 import br.com.navegacao.R;
 import br.com.navegacao.adapter.PessoaAdapter;
 import br.com.navegacao.domain.PersonDBHelper;
@@ -42,15 +40,16 @@ public class CadastroFragment extends BaseFragment {
 							 Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_cadastro, container, false);
 
-//		//FAB
-//		FloatingActionButton fab = view.findViewById(R.id.fab);
-//		fab.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View view) {
-//				Intent intent = new Intent(getContext(), AddUsuario.class);
-//				startActivity(intent);
-//			}
-//		});
+		//FAB
+		final FloatingActionButton fab = view.findViewById(R.id.fab);
+		fab.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent intent = new Intent(getContext(), AddUsuario.class);
+				startActivity(intent);
+			}
+		});
+
 		recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 		linearLayoutManager = new LinearLayoutManager(getActivity());
 		recyclerView.setLayoutManager(linearLayoutManager);
@@ -58,6 +57,25 @@ public class CadastroFragment extends BaseFragment {
 		recyclerView.setHasFixedSize(true);
 		setHasOptionsMenu(true);
 
+		recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+			@Override
+			public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+				if(newState == RecyclerView.SCROLL_STATE_IDLE){
+					fab.show();
+				}
+				super.onScrollStateChanged(recyclerView, newState);
+			}
+
+			@Override
+			public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+
+				if(dy > 0 || dy < 0 && fab.isShown()){
+					fab.hide();
+				}
+			}
+		});
+
+		//CHAMA MÉTODO PARA POPULAR O FILTRO
 		populaterecyclerView(filter);
 
 		return view;

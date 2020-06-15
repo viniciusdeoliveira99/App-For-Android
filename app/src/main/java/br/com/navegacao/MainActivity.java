@@ -3,22 +3,23 @@ package br.com.navegacao;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AlertDialog;
-import androidx.core.view.GravityCompat;
-import com.google.android.material.navigation.NavigationView;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import android.view.Menu;
-import android.widget.TextView;
+import com.google.android.material.navigation.NavigationView;
 
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
+import br.com.navegacao.fragment.ConfigFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
         //SETUP THE NAV DRAWER
         setupNavDrawer();
 
-        //FAB ACTION
-        FloatingActionButton fab = findViewById(R.id.fab);
-		fab.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent = new Intent(MainActivity.this, AddUsuario.class);
-				startActivity(intent);
-			}
-		});
+//        //FAB ACTION
+//        FloatingActionButton fab = findViewById(R.id.fab);
+//		fab.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View view) {
+//				Intent intent = new Intent(MainActivity.this, AddUsuario.class);
+//				startActivity(intent);
+//			}
+//		});
 
         if (savedInstanceState == null) {
             CadastroFragment frag = new CadastroFragment();
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 openDrawer();
             }
         });
+
         drawerLayout = findViewById(R.id.drawer_layout);
         navView = findViewById(R.id.nav_view);
 
@@ -109,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 				
             //MENU CONFIGURAÇÕES
             case R.id.nav_tools:
-				startActivity(new Intent(this, ConfiguracoesActivity.class));
+				replaceFragment(new ConfigFragment());
                 break;
 				
             //MENU SAIR

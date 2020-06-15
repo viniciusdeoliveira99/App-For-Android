@@ -11,7 +11,7 @@
 9-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:6:5-31:19
+11-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:6:5-32:19
 12        android:allowBackup="true"
 12-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -60,17 +60,20 @@
 36        <activity android:name="br.com.navegacao.AtualizarUsuario" />
 36-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:9-54
 36-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:19-51
-37
-38        <provider
-38-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-39            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-40            android:authorities="br.com.navegacao.lifecycle-process"
-40-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-41            android:exported="false"
-41-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-42            android:multiprocess="true" />
-42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-43    </application>
-44
-45</manifest>
+37        <activity android:name="br.com.navegacao.ConfiguracoesActivity" />
+37-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:31:3-53
+37-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:31:13-50
+38
+39        <provider
+39-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+40            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+40-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+41            android:authorities="br.com.navegacao.lifecycle-process"
+41-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+42            android:exported="false"
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+43            android:multiprocess="true" />
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+44    </application>
+45
+46</manifest>

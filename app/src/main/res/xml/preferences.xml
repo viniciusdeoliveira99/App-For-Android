@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/title">
-        <SwitchPreference
-            android:key="PREF_CHECK_PUSH"
-            android:summary="@string/receberEmail"
-            android:title="@string/notificacoes" />
+
+    <PreferenceCategory
+        android:title="@string/config">
+
+            <SwitchPreference
+                android:key="PREF_CHECK_PUSH"
+                android:summary="@string/receberEmail"
+                android:title="@string/notificacoes" />
+
     </PreferenceCategory>
 </PreferenceScreen>

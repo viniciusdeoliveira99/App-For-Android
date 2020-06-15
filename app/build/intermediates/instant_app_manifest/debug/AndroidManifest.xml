@@ -35,6 +35,7 @@
         <activity android:name="br.com.navegacao.Cadastro" />
         <activity android:name="br.com.navegacao.AddUsuario" />
         <activity android:name="br.com.navegacao.AtualizarUsuario" />
+        <activity android:name="br.com.navegacao.ConfiguracoesActivity" />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
