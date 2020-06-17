@@ -57,24 +57,6 @@ public class CadastroFragment extends BaseFragment {
 		recyclerView.setHasFixedSize(true);
 		setHasOptionsMenu(true);
 
-		recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-			@Override
-			public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
-				if(newState == RecyclerView.SCROLL_STATE_IDLE){
-					fab.show();
-				}
-				super.onScrollStateChanged(recyclerView, newState);
-			}
-
-			@Override
-			public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-
-				if(dy > 0 || dy < 0 && fab.isShown()){
-					fab.hide();
-				}
-			}
-		});
-
 		//CHAMA MÉTODO PARA POPULAR O FILTRO
 		populaterecyclerView(filter);
 

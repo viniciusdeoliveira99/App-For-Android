@@ -89,7 +89,7 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
             public void onClick(View v) {
                 AlertDialog.Builder adb = new AlertDialog.Builder(mContext);
                 adb.setTitle("Escolha uma opção:");
-                adb.setMessage("Atualiza ou exclui usuário?");
+                adb.setMessage("Atualizar ou deletar o usuário?");
                 adb.setPositiveButton("Atualizar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -105,7 +105,7 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
                         dbHelper.deletarCadastro(pessoa.getId(), mContext);
 
                         pessoaLista.remove(position);
-                        mRecyclerView.removeViewAt(position);
+//                        mRecyclerView.removeViewAt(position);
                         notifyItemRemoved(position);
                         notifyItemRangeChanged(position, pessoaLista.size());
                         notifyDataSetChanged();

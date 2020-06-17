@@ -19,10 +19,4 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
 
-<!--    <FrameLayout-->
-<!--        android:id="@+id/nav_drawer_container"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-<!--    </FrameLayout>-->
-
 </androidx.drawerlayout.widget.DrawerLayout>

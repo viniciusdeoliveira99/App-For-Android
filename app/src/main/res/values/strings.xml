@@ -38,7 +38,4 @@
     <string name="receberEmail">Receber alerta por e-mail</string>
     <string name="modoNoturno">Modo noturno</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>

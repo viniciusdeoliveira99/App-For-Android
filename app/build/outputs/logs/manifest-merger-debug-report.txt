@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.navigation:navigation-ui:2.2.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d6eb164f6a078946cbbb726b40cb4870\navigation-ui-2.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.preference:preference:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\ad83ac99f9e863d2882a92653b32cec1\preference-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -50,27 +50,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DNAXIS\.gradle\c
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:4:5-31
 		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:6:5-32:19
+ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:6:5-31:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -131,10 +131,6 @@ activity#br.com.navegacao.AtualizarUsuario
 ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:9-54
 	android:name
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:19-51
-activity#br.com.navegacao.ConfiguracoesActivity
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:31:3-53
-	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:31:13-50
 uses-sdk
 INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml

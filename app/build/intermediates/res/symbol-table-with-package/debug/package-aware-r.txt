@@ -1457,6 +1457,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable email_black_36
 drawable ic_arrow_down_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
@@ -1493,6 +1494,7 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nights_stay_black_36
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2069,6 +2071,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string config
 string content
 string email
 string error_icon_content_description
@@ -2079,7 +2082,6 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string filter
 string forget
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string idade
@@ -2144,7 +2146,6 @@ string senha
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string telefone
-string title
 string usuario
 string v7_preference_off
 string v7_preference_on
