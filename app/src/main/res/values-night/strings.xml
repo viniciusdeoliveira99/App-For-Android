@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Navegacao</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Usuário</string>
+    <string name="nav_header_subtitle">usuario@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_about">Sobre</string>
+
+    <!-- MENU LATERAL DRAWER-->
+    <string name="menu_home">Home</string>
+    <string name="menu_config">Configurações</string>
+    <string name="menu_exit">Exit</string>
+
+    <!-- CADASTRO -->
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="ocupacao">Ocupação</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="telefone">Telefone</string>
+    <string name="email">E-mail</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="atualizar">Atualizar</string>
+
+    <!-- ITENS GERAIS -->
+    <string name="filter">Organizar</string>
+    <string name="content">User Image</string>
+    <string name="log">Login</string>
+    <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>
+    <string name="inserir">Clique para cadastrar novo usuário</string>
+    <string name="exit">Encerrar</string>
+
+    <!-- PREFERENCES -->
+    <string name="notificacoes">Notificações</string>
+    <string name="config">Configurações do App</string>
+    <string name="receberEmail">Receber alerta por e-mail</string>
+    <string name="modoNoturno">Modo noturno</string>
+
+</resources>

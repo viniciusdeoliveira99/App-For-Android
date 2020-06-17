@@ -11,4 +11,9 @@
     <color name="colorPressedOk">#66ccff</color>
     <color name="colorCancel">#bfbfbf</color>
     <color name="colorPressedCancel">#f2f2f2</color>
+
+    <!-- DAY MODE-->
+    <color name="backgroundColor">#ffff</color>
+    <color name="textColor">@color/colorPrimary</color>
+
 </resources>

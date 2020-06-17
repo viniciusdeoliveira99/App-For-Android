@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
     android:orientation="vertical">
 
     <!--Image-->
@@ -28,6 +29,7 @@
             android:layout_marginTop="15dp"
             android:hint="@string/usuario"
             android:inputType="text"
+            android:textColor="@color/textColor"
             android:maxLength="20"/>
 
         <EditText
@@ -38,6 +40,7 @@
             android:layout_marginTop="15dp"
             android:hint="@string/senha"
             android:inputType="textPassword"
+            android:textColor="@color/textColor"
             android:maxLength="4"/>
 
         <Button
@@ -57,8 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:text="@string/inserir"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorLink="@color/colorAccent"
+            android:textColor="@color/textColor"
             android:layout_gravity="center"/>
 
     <FrameLayout

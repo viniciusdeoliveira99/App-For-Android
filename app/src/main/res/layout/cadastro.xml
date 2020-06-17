@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="@string/usuario"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/textColor"
             android:maxLength="20"
             android:inputType="text"/>
 
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:hint="@string/senha"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/textColor"
             android:maxLength="4"
             android:inputType="textPassword"/>
 
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/telefone"
             android:layout_marginTop="15dp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/textColor"
             android:maxLength="20"
             android:inputType="phone"/>
 
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:hint="@string/email"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/textColor"
             android:maxLength="50"
             android:inputType="textEmailAddress"/>
 
@@ -53,14 +53,14 @@
             android:layout_marginTop="10dp">
                 <Button
                     android:id="@+id/botaoCadastrarUsuario"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/textColor"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="@string/cadastrar"
                     android:background="@drawable/seletor_ok"/>
                 <Button
                     android:id="@+id/botaoCancelarCadastro"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/textColor"
                     android:layout_marginLeft="10dp"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"

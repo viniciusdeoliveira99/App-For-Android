@@ -15,7 +15,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 import br.com.navegacao.domain.DBHelper;
@@ -40,19 +39,11 @@ public class MainActivity extends AppCompatActivity {
         if (toolbar != null) {
             setSupportActionBar(toolbar);
         }
-        //MÉTODO DO MENU LATERAL
+
+            //MÉTODO DO MENU LATERAL
         setupNavDrawer();
 
-//        //FAB
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//		fab.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View view) {
-//				Intent intent = new Intent(MainActivity.this, AddUsuario.class);
-//				startActivity(intent);
-//			}
-//		});
-
+        //ADD O FRAGMENT
         if (savedInstanceState == null) {
             CadastroFragment frag = new CadastroFragment();
             frag.setArguments(getIntent().getExtras());

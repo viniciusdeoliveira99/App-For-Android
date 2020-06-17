@@ -10,4 +10,9 @@ public class PrefsUtils {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         return sp.getBoolean("PREF_CHECK_PUSH", false);
     }
+
+    public static boolean isDarkModeOn(final Context context){
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getBoolean("isDarkModeOn", false);
+    }
 }

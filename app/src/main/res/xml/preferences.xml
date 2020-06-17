@@ -9,7 +9,7 @@
             android:icon="@drawable/email_black_36"
             android:summary="@string/receberEmail"/>
         <SwitchPreference
-            android:key="PREF_NIGHT"
+            android:key="isDarkModeOn"
             android:icon="@drawable/nights_stay_black_36"
             android:summary="@string/modoNoturno" />
 

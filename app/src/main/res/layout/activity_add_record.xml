@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/backgroundColor"
     android:padding="10dp">
 
     <EditText
@@ -14,6 +15,7 @@
         android:ems="10"
         android:maxLength="50"
         android:inputType="textPersonName"
+        android:textColor="@color/textColor"
         android:hint="@string/nome" />
 
     <EditText
@@ -22,6 +24,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/textColor"
         android:maxLength="3"
         android:hint="@string/idade" />
 
@@ -31,6 +34,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/textColor"
         android:maxLength="50"
         android:hint="@string/ocupacao" />
 
