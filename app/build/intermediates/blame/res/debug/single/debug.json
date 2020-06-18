@@ -32,12 +32,12 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -46,6 +46,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_white.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_settings_white.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_in.xml.flat",
@@ -68,12 +72,12 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_design_box_stroke_color.xml.flat",
-        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\color\\design_box_stroke_color.xml"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_design_box_stroke_color.xml.flat",
+        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\color\\design_box_stroke_color.xml"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar_custom_background.xml.flat",
@@ -202,6 +206,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_dropdown_arrow.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable\\mtrl_dropdown_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_home_black.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
@@ -340,10 +348,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_checkbox_checked_mtrl.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\btn_checkbox_checked_mtrl.xml"
     },
@@ -390,6 +394,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_night_mode_white.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_night_mode_white.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
@@ -632,10 +640,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_material.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\ad83ac99f9e863d2882a92653b32cec1\\preference-1.0.0\\res\\layout\\preference_material.xml"
     },
@@ -852,10 +856,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_checked_mtrl_animation_interpolator_1.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\interpolator\\btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
     },
@@ -916,16 +916,24 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_home.png"
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_white.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_home_white.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_information.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\ad83ac99f9e863d2882a92653b32cec1\\preference-1.0.0\\res\\layout\\preference_information.xml"
     },
     {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_exit_black.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_exit_black.png"
+    },
+    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\menu-night_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\menu-night\\activity_main_drawer.xml"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
@@ -1016,6 +1024,10 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\color\\mtrl_outlined_stroke_color.xml"
     },
     {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\menu-night_main.xml.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\menu-night\\main.xml"
+    },
+    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\layout\\notification_template_custom_big.xml"
     },
@@ -1048,6 +1060,10 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_email.png"
+    },
+    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
@@ -1058,6 +1074,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_black.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_settings_black.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -1170,10 +1190,6 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
-    },
-    {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_unchecked_box_inner_merged_animation.xml.flat",
@@ -1312,10 +1328,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\btn_radio_on_to_off_mtrl_animation.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_fast_out_slow_in.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\interpolator\\fast_out_slow_in.xml"
     },
@@ -1334,10 +1346,6 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
-    },
-    {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_outline_add_black_36.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\outline_add_black_36.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
@@ -1452,10 +1460,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_start_launcher.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_start_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -1470,6 +1474,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_line_height_from_style.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\layout\\text_view_with_line_height_from_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email_white.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_email_white.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
@@ -1492,6 +1500,10 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\layout\\test_design_checkbox.xml"
     },
     {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_night_mode.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_night_mode.png"
+    },
+    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
@@ -1510,6 +1522,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_config.xml.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\layout\\fragment_config.xml"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1648,14 +1664,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable\\ic_calendar_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_outline_power_settings_new_black_36.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\outline_power_settings_new_black_36.png"
-    },
-    {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
@@ -1690,10 +1698,6 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_fab_background.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable\\design_fab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_pref_screen.xml.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\layout\\pref_screen.xml"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_keyboard_arrow_left_black_24dp.xml.flat",
@@ -1736,10 +1740,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable\\ic_menu_arrow_up_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_pop_enter_anim.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d6eb164f6a078946cbbb726b40cb4870\\navigation-ui-2.2.1\\res\\anim\\nav_default_pop_enter_anim.xml"
     },
@@ -1770,10 +1770,6 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nights_stay_black_36.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\nights_stay_black_36.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
@@ -1838,10 +1834,6 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_email_black_36.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\email_black_36.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
@@ -2002,10 +1994,6 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -2192,10 +2180,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\color\\mtrl_card_view_ripple.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -2248,10 +2232,6 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\xml\\preferences.xml"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_test_mtrl_calendar_day_selected.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\color\\test_mtrl_calendar_day_selected.xml"
     },
@@ -2286,6 +2266,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_cancel.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable\\mtrl_ic_cancel.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_exit_white.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_exit_white.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
@@ -2612,6 +2596,10 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable\\ic_keyboard_arrow_right_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\menu-night_home_menu.xml.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\menu-night\\home_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -2758,6 +2746,10 @@
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_fab.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_add_fab.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",

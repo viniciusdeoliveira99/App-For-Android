@@ -908,12 +908,15 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color editTextBack
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color geral
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color hintColor
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1459,16 +1462,19 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable email_black_36
+drawable ic_add_fab
 drawable ic_arrow_down_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
-drawable ic_home
+drawable ic_email
+drawable ic_email_white
+drawable ic_exit_black
+drawable ic_exit_white
+drawable ic_home_black
+drawable ic_home_white
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
-drawable ic_launcher_background
-drawable ic_launcher_foreground
 drawable ic_launcher_user
 drawable ic_menu_actual
 drawable ic_menu_arrow_down_black_24dp
@@ -1483,8 +1489,10 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_settings
-drawable ic_start_launcher
+drawable ic_night_mode
+drawable ic_night_mode_white
+drawable ic_settings_black
+drawable ic_settings_white
 drawable image
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1497,7 +1505,6 @@ drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable nav_img
 drawable navigation_empty_icon
-drawable nights_stay_black_36
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1510,8 +1517,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable outline_add_black_36
-drawable outline_power_settings_new_black_36
 drawable preference_list_divider_material
 drawable seletor
 drawable seletor_cancelar
@@ -1592,6 +1597,8 @@ id addUsuario
 id alertTitle
 id all
 id always
+id aswitch1
+id aswitch2
 id async
 id atualizaIdade
 id atualizaNome
@@ -1952,6 +1959,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout expand_button
 layout fragment_cadastro
+layout fragment_config
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1996,7 +2004,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout pref_screen
 layout preference
 layout preference_category
 layout preference_category_material
@@ -2073,6 +2080,7 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string config
+string configApp
 string content
 string email
 string error_icon_content_description
@@ -2978,7 +2986,6 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
-xml preferences
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

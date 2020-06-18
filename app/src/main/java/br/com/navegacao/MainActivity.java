@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
         }
 
-            //MÉTODO DO MENU LATERAL
+        //MÉTODO DO MENU LATERAL
         setupNavDrawer();
 
         //ADD O FRAGMENT
@@ -63,16 +63,16 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         navView = findViewById(R.id.nav_view);
 
-        pessoaAcesso = new PessoaAcesso();
-        dbHelper = new DBHelper(this);
-        pessoaAcesso = dbHelper.getDados(pessoaID);
-
-        View header = navView.getHeaderView(0);
-        TextView user = header.findViewById(R.id.usuarioLogado);
-        TextView email = header.findViewById(R.id.usuarioEmail);
-
-        user.setText(pessoaAcesso.getUsuario());
-        email.setText(pessoaAcesso.getEmail());
+//        pessoaAcesso = new PessoaAcesso();
+//        dbHelper = new DBHelper(this);
+//        pessoaAcesso = dbHelper.getDados(pessoaID);
+//
+//        View header = navView.getHeaderView(0);
+//        TextView user = header.findViewById(R.id.usuarioLogado);
+//        TextView email = header.findViewById(R.id.usuarioEmail);
+//
+//        user.setText(pessoaAcesso.getUsuario());
+//        email.setText(pessoaAcesso.getEmail());
 
 
         if (drawerLayout != null) {
@@ -94,17 +94,17 @@ public class MainActivity extends AppCompatActivity {
     // Trata o evento do menu lateral
     private void onNavDrawerItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-			
+
             //MENU HOME
             case R.id.nav_home:
                 replaceFragment(new CadastroFragment());
                 break;
-				
+
             //MENU CONFIGURAÇÕES
             case R.id.nav_tools:
-				replaceFragment(new ConfigFragment());
+                replaceFragment(new ConfigFragment());
                 break;
-				
+
             //MENU SAIR
             case R.id.nav_exit:
                 AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);

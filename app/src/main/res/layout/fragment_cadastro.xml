@@ -21,10 +21,6 @@
         android:scrollbarStyle="outsideOverlay"
         android:scrollbars="vertical" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
@@ -33,5 +29,5 @@
             app:srcCompat="@drawable/ic_add_fab"
             android:layout_gravity="bottom|end"
             android:focusable="true" />
-    </FrameLayout>
+
 </LinearLayout>

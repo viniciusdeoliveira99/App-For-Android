@@ -10,8 +10,8 @@
 	card_view:cardElevation="2dp"
 	card_view:contentPadding="2dp"
 	android:foreground="?attr/selectableItemBackground"
-	android:layout_marginBottom="10dp"
-	android:background="@color/cardBackground">
+	android:backgroundTint="@color/geral"
+	android:layout_marginBottom="10dp">
 
 	<LinearLayout
 		android:layout_width="match_parent"

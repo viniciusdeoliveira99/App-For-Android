@@ -33,8 +33,7 @@
     <string name="exit">Encerrar</string>
 
     <!-- PREFERENCES -->
-    <string name="notificacoes">Notificações</string>
-    <string name="config">Configurações do App</string>
+    <string name="configApp">Configurações do App</string>
     <string name="receberEmail">Receber alerta por e-mail</string>
     <string name="modoNoturno">Modo noturno</string>
 

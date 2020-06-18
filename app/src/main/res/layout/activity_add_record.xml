@@ -17,6 +17,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/textColor"
         android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/editTextBack"
         android:hint="@string/nome" />
 
     <EditText
@@ -27,6 +28,7 @@
         android:inputType="number"
         android:textColor="@color/textColor"
         android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/editTextBack"
         android:maxLength="3"
         android:hint="@string/idade" />
 
@@ -38,6 +40,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/textColor"
         android:textColorHint="@color/hintColor"
+        android:backgroundTint="@color/editTextBack"
         android:maxLength="50"
         android:hint="@string/ocupacao" />
 

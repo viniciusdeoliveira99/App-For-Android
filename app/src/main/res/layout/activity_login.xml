@@ -31,6 +31,7 @@
             android:inputType="text"
             android:textColor="@color/textColor"
             android:textColorHint="@color/hintColor"
+            android:backgroundTint="@color/editTextBack"
             android:maxLength="20"/>
 
         <EditText
@@ -43,6 +44,7 @@
             android:inputType="textPassword"
             android:textColor="@color/textColor"
             android:textColorHint="@color/hintColor"
+            android:backgroundTint="@color/editTextBack"
             android:maxLength="4"/>
 
         <Button

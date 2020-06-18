@@ -16,6 +16,7 @@
     <color name="backgroundColor">#000</color>
     <color name="textColor">#ccebff</color>
     <color name="hintColor">#80ccff</color>
-    <color name="cardBackground">#333333</color>
+    <color name="geral">#262626</color>
+    <color name="editTextBack">#1a1a1a</color>
 
 </resources>
