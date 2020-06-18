@@ -15,4 +15,7 @@
     <!-- NIGHT MODE -->
     <color name="backgroundColor">#000</color>
     <color name="textColor">#ccebff</color>
+    <color name="hintColor">#80ccff</color>
+    <color name="cardBackground">#333333</color>
+
 </resources>

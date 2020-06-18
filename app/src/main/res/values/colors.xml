@@ -15,5 +15,7 @@
     <!-- DAY MODE-->
     <color name="backgroundColor">#ffff</color>
     <color name="textColor">@color/colorPrimary</color>
+    <color name="hintColor">#007acc</color>
+    <color name="cardBackground">#e6e6e6</color>
 
 </resources>

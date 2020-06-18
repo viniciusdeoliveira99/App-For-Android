@@ -16,6 +16,7 @@
         android:maxLength="50"
         android:inputType="textPersonName"
         android:textColor="@color/textColor"
+        android:textColorHint="@color/hintColor"
         android:hint="@string/nome" />
 
     <EditText
@@ -25,6 +26,7 @@
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/textColor"
+        android:textColorHint="@color/hintColor"
         android:maxLength="3"
         android:hint="@string/idade" />
 
@@ -35,6 +37,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/textColor"
+        android:textColorHint="@color/hintColor"
         android:maxLength="50"
         android:hint="@string/ocupacao" />
 
@@ -50,7 +53,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@drawable/seletor_ok"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
             android:text="@string/cadastrar"/>
         <Button
             android:id="@+id/botaoCancelar"
@@ -58,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:background="@drawable/seletor_cancelar"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
             android:text="@string/cancelar"/>
     </LinearLayout>
 </LinearLayout>

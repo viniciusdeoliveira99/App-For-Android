@@ -11,7 +11,7 @@
 	card_view:contentPadding="2dp"
 	android:foreground="?attr/selectableItemBackground"
 	android:layout_marginBottom="10dp"
-	android:background="@color/backgroundColor">
+	android:background="@color/cardBackground">
 
 	<LinearLayout
 		android:layout_width="match_parent"
