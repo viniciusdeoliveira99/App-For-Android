@@ -2,10 +2,12 @@ package br.com.navegacao;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.asha.nightowllib.NightOwl;
 
 import java.util.List;
 
@@ -28,6 +32,7 @@ public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
@@ -35,6 +40,23 @@ public class Login extends AppCompatActivity {
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
         inserir = (TextView)findViewById(R.id.inserir);
+		
+		
+		SharedPreferences preferences = getSharedPreferences("isDarkModeOn", MODE_PRIVATE);
+		SharedPreferences.Editor editor = preferences.edit();
+		
+		if(preferences.contains("isDarkModeOn")){
+			AppCompatDelegate.setDefaultNightMode(
+                            AppCompatDelegate.MODE_NIGHT_YES);
+                    editor.putBoolean("isDarkModeOn", true);
+                    editor.apply();
+		}else {
+			AppCompatDelegate.setDefaultNightMode(
+                            AppCompatDelegate.MODE_NIGHT_NO);
+                    editor.putBoolean("isDarkModeOn", false);
+                    editor.apply();
+		}
+		
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

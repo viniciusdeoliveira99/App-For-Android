@@ -32,12 +32,12 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
-        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
+        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -48,12 +48,12 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\color\\abc_tint_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_white.png.flat",
-        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_settings_white.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_in.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_white.png.flat",
+        "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\ic_settings_white.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_seletor_cancelar.xml.flat",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
-        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\color_design_box_stroke_color.xml.flat",
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\color\\design_box_stroke_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
+        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\b8286ed28b50483d1bfadc3ffa43e8ca\\material-1.1.0\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar_custom_background.xml.flat",

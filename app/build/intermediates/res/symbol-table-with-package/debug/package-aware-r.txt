@@ -570,6 +570,20 @@ attr navigationIcon
 attr navigationMode
 attr navigationViewStyle
 attr negativeButtonText
+attr night_additionThemeDay
+attr night_additionThemeNight
+attr night_alpha
+attr night_background
+attr night_colorAccent
+attr night_colorPrimary
+attr night_colorPrimaryDark
+attr night_divider
+attr night_listSelector
+attr night_navigationBarColor
+attr night_src
+attr night_statusBarColor
+attr night_textColor
+attr night_textColorHint
 attr nullable
 attr number
 attr numericModifiers
@@ -1597,8 +1611,7 @@ id addUsuario
 id alertTitle
 id all
 id always
-id aswitch1
-id aswitch2
+id aswitch
 id async
 id atualizaIdade
 id atualizaNome
@@ -2952,6 +2965,11 @@ styleable NavHostFragment defaultNavHost
 styleable NavInclude graph
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextColor menu
 styleable Navigator android_label android_id
+styleable NightOwl_ImageView night_src
+styleable NightOwl_ListView night_divider night_listSelector
+styleable NightOwl_TextView night_textColor night_textColorHint
+styleable NightOwl_Theme night_additionThemeDay night_additionThemeNight night_colorAccent night_colorPrimary night_colorPrimaryDark night_navigationBarColor night_statusBarColor
+styleable NightOwl_View night_alpha night_background
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable Preference android_icon android_persistent android_enabled android_layout android_title android_selectable android_key android_summary android_order android_widgetLayout android_dependency android_defaultValue android_shouldDisableView android_fragment android_singleLineTitle android_iconSpaceReserved allowDividerAbove allowDividerBelow defaultValue dependency enabled fragment icon iconSpaceReserved isPreferenceVisible key layout order persistent selectable shouldDisableView singleLineTitle summary title widgetLayout

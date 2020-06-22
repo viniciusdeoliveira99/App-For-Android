@@ -274,7 +274,7 @@
     </declare-styleable><declare-styleable name="StateListDrawableItem">
         
         <attr name="android:drawable"/>
-    </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.recyclerview:recyclerview:1.1.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.recyclerview:recyclerview:1.1.0" from-dependency="true" generated-set="androidx.recyclerview:recyclerview:1.1.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\res"><file path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\res\values\values.xml" qualifiers=""><attr format="reference" name="recyclerViewStyle"/><dimen name="fastscroll_default_thickness">8dp</dimen><dimen name="fastscroll_margin">0dp</dimen><dimen name="fastscroll_minimum_range">50dp</dimen><dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen><dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen><dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen><item name="item_touch_helper_previous_elevation" type="id"/><declare-styleable name="RecyclerView">
+    </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.asha.nightowllib:nightowllib:0.2$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.asha.nightowllib:nightowllib:0.2" from-dependency="true" generated-set="com.asha.nightowllib:nightowllib:0.2$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\res"><file path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\res\values\values.xml" qualifiers=""><declare-styleable name="NightOwl_ImageView"><attr format="reference" name="night_src"/></declare-styleable><declare-styleable name="NightOwl_ListView"><attr format="color|reference" name="night_listSelector"/><attr format="color|reference" name="night_divider"/></declare-styleable><declare-styleable name="NightOwl_TextView"><attr format="color|reference" name="night_textColor"/><attr format="color|reference" name="night_textColorHint"/></declare-styleable><declare-styleable name="NightOwl_Theme"><attr format="color|reference" name="night_colorPrimary"/><attr format="color|reference" name="night_colorPrimaryDark"/><attr format="color|reference" name="night_colorAccent"/><attr format="color|reference" name="night_navigationBarColor"/><attr format="color|reference" name="night_statusBarColor"/><attr format="reference" name="night_additionThemeDay"/><attr format="reference" name="night_additionThemeNight"/></declare-styleable><declare-styleable name="NightOwl_View"><attr format="color|reference" name="night_background"/><attr format="float" name="night_alpha"/></declare-styleable><string name="app_name">NightOwlLib</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.recyclerview:recyclerview:1.1.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.recyclerview:recyclerview:1.1.0" from-dependency="true" generated-set="androidx.recyclerview:recyclerview:1.1.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\res"><file path="C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\res\values\values.xml" qualifiers=""><attr format="reference" name="recyclerViewStyle"/><dimen name="fastscroll_default_thickness">8dp</dimen><dimen name="fastscroll_margin">0dp</dimen><dimen name="fastscroll_minimum_range">50dp</dimen><dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen><dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen><dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen><item name="item_touch_helper_previous_elevation" type="id"/><declare-styleable name="RecyclerView">
         
         <attr format="string" name="layoutManager"/>
 
@@ -6527,7 +6527,7 @@
     <attr format="reference" name="liftOnScrollTargetViewId"/>
     
     <attr format="color" name="statusBarForeground"/>
-  </declare-styleable><declare-styleable name="RecycleListView">
+  </declare-styleable><declare-styleable name="NightOwl_ListView"><attr format="color|reference" name="night_listSelector"/><attr format="color|reference" name="night_divider"/></declare-styleable><declare-styleable name="RecycleListView">
         
         <attr format="dimension" name="paddingBottomNoButtons"/>
         
@@ -6586,7 +6586,7 @@
         <attr name="android:minHeight"/>
         
         <attr format="reference" name="menu"/>
-    </declare-styleable><declare-styleable name="ExtendedFloatingActionButton">
+    </declare-styleable><declare-styleable name="NightOwl_ImageView"><attr format="reference" name="night_src"/></declare-styleable><declare-styleable name="ExtendedFloatingActionButton">
     
     <attr name="elevation"/>
     
@@ -7121,7 +7121,7 @@
     <attr format="boolean" name="state_lifted"/>
     
     <attr format="boolean" name="state_liftable"/>
-  </declare-styleable><declare-styleable name="BottomAppBar">
+  </declare-styleable><declare-styleable name="NightOwl_View"><attr format="color|reference" name="night_background"/><attr format="float" name="night_alpha"/></declare-styleable><declare-styleable name="BottomAppBar">
     
     <attr name="backgroundTint"/>
     
@@ -7948,7 +7948,7 @@
 
     
     <attr format="reference" name="layout_scrollInterpolator"/>
-  </declare-styleable><declare-styleable name="ColorStateListItem">
+  </declare-styleable><declare-styleable name="NightOwl_Theme"><attr format="color|reference" name="night_colorPrimary"/><attr format="color|reference" name="night_colorPrimaryDark"/><attr format="color|reference" name="night_colorAccent"/><attr format="color|reference" name="night_navigationBarColor"/><attr format="color|reference" name="night_statusBarColor"/><attr format="reference" name="night_additionThemeDay"/><attr format="reference" name="night_additionThemeNight"/></declare-styleable><declare-styleable name="ColorStateListItem">
         
         <attr name="android:color"/>
         
@@ -8219,7 +8219,7 @@
         <attr name="android:maxWidth"/>
         <attr format="dimension" name="maxHeight"/>
         <attr name="android:maxHeight"/>
-    </declare-styleable><declare-styleable name="MaterialTextAppearance" parent="TextAppearance">
+    </declare-styleable><declare-styleable name="NightOwl_TextView"><attr format="color|reference" name="night_textColor"/><attr format="color|reference" name="night_textColorHint"/></declare-styleable><declare-styleable name="MaterialTextAppearance" parent="TextAppearance">
     
     <attr name="android:lineHeight"/>
     <attr name="lineHeight"/>
