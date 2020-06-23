@@ -87,7 +87,7 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder adb = new AlertDialog.Builder(mContext);
+                AlertDialog.Builder adb = new AlertDialog.Builder(mContext, R.style.MyDialogTheme);
                 adb.setTitle("Escolha uma opção:");
                 adb.setMessage("Atualizar ou deletar o usuário?");
                 adb.setPositiveButton("Atualizar", new DialogInterface.OnClickListener() {
@@ -109,7 +109,7 @@ public class PessoaAdapter extends RecyclerView.Adapter<PessoaAdapter.ViewHolder
                         notifyItemRemoved(position);
                         notifyItemRangeChanged(position, pessoaLista.size());
                         notifyDataSetChanged();
-                        Toast.makeText(mContext, "Usuário: " + pessoa.getNome() + " deletado(a).", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "Usuário: (" + pessoa.getNome() + ") deletado(a).", Toast.LENGTH_SHORT).show();
                     }
                 });
                 adb.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {

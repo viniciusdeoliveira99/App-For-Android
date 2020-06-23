@@ -109,6 +109,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return pa;
     }
 
+    //MÉTODO PARA BUSCAR OS DADOS DO USUÁRIO NO BANCO
     public List<PessoaAcesso> buscarDados(){
         List<PessoaAcesso> listarDados = new ArrayList<>();
 
@@ -117,7 +118,6 @@ public class DBHelper extends SQLiteOpenHelper {
             Cursor cursor = db.rawQuery("select " + COLUMN_ID + ", " + COLUMN_USUARIO + ", " + COLUMN_SENHA + " from " + TABLE_NAME, null);
 
             if(cursor.moveToFirst()){
-
                 do{
                     PessoaAcesso pessoaAcesso = new PessoaAcesso();
                     pessoaAcesso.setId(cursor.getLong(0));

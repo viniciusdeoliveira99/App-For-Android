@@ -57,25 +57,34 @@
             android:background="@drawable/seletor"
             android:text="@string/log"/>
 
-        <TextView
-            android:id="@+id/inserir"
-            android:clickable="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="@string/inserir"
-            android:textColor="@color/textColor"
-            android:layout_gravity="center"
-            android:focusable="true" />
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textColor"
+            android:background="@color/checkbox"
+            android:text="@string/logado" />
+
+        <TextView
+            android:id="@+id/inserir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inserir"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/textColor" />
 
         <TextView
             android:id="@+id/forget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:layout_gravity="center"
             android:textColor="@color/colorAccent"
             android:text="@string/forget"/>

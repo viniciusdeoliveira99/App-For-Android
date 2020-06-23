@@ -70,9 +70,9 @@ public class Cadastro extends AppCompatActivity {
         if(!user.isEmpty() && !pass.isEmpty() && !phone.isEmpty() && !mail.isEmpty() && pass.length() >= 4) {
             dbHelper.create(p);
             goBackMain();
-            toast("[Usuário: " + p.getUsuario() + " cadastrado(a)]");
+            toast("Usuário: (" + p.getUsuario() + ") cadastrado(a)");
         }else{
-            AlertDialog.Builder adb = new AlertDialog.Builder(Cadastro.this);
+            AlertDialog.Builder adb = new AlertDialog.Builder(Cadastro.this, R.style.MyDialogTheme);
             adb.setTitle("Atenção");
             adb.setMessage("Preencher todos os dados! \n" + "A senha deve conter 4 caracteres!");
             adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -81,6 +81,7 @@ public class Cadastro extends AppCompatActivity {
                     dialog.dismiss();
                 }
             });
+
             adb.show();
             usuario.setHintTextColor(Color.RED);
             senha.setHintTextColor(Color.RED);

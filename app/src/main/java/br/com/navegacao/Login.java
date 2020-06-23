@@ -1,10 +1,5 @@
 package br.com.navegacao;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,11 +7,14 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.asha.nightowllib.NightOwl;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import java.util.List;
 
@@ -29,6 +27,7 @@ public class Login extends AppCompatActivity {
     private EditText senha;
     private TextView inserir;
     private DBHelper dbHelper;
+    private CheckBox checkBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,23 +39,50 @@ public class Login extends AppCompatActivity {
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
         inserir = (TextView)findViewById(R.id.inserir);
-		
-		
-		SharedPreferences preferences = getSharedPreferences("isDarkModeOn", MODE_PRIVATE);
-		SharedPreferences.Editor editor = preferences.edit();
-		
-		if(preferences.contains("isDarkModeOn")){
-			AppCompatDelegate.setDefaultNightMode(
-                            AppCompatDelegate.MODE_NIGHT_YES);
-                    editor.putBoolean("isDarkModeOn", true);
-                    editor.apply();
-		}else {
-			AppCompatDelegate.setDefaultNightMode(
-                            AppCompatDelegate.MODE_NIGHT_NO);
-                    editor.putBoolean("isDarkModeOn", false);
-                    editor.apply();
-		}
-		
+        checkBox = (CheckBox)findViewById(R.id.check);
+
+
+        //PREFERÊNCIAS MODO NOTURNO
+        SharedPreferences sharedPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
+        final boolean isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn", false);
+        final boolean isChecked = sharedPreferences.getBoolean("isChecked", false);
+
+        if (isDarkModeOn || isChecked) {
+            AppCompatDelegate.setDefaultNightMode(
+                    AppCompatDelegate.MODE_NIGHT_YES);
+        }else {
+            AppCompatDelegate.setDefaultNightMode(
+                    AppCompatDelegate.MODE_NIGHT_NO);
+        }
+
+//        //PREFERÊNCIAS CHECKBOX
+//        SharedPreferences preferences = getSharedPreferences("prefsShared", MODE_PRIVATE);
+//        final SharedPreferences.Editor editor = preferences.edit();
+//        final boolean checked = preferences.getBoolean("checked", false);
+//
+//        if(checked){
+//            editor.putBoolean("checked", true);
+//            editor.apply();
+//        }else{
+//            editor.putBoolean("checked", false);
+//            editor.apply();
+//        }
+//
+//        checkBox.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(checked){
+//                    editor.putBoolean("checked", false);
+//                    editor.apply();
+//
+//                }else{
+//                    editor.putBoolean("checked", true);
+//                    editor.apply();
+//                    checkBox.setChecked(true);
+//                }
+//            }
+//        });
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,15 +112,16 @@ public class Login extends AppCompatActivity {
             for (int i = 0; i < lista.size(); i++) {
 
                 PessoaAcesso pessoaAcesso = (PessoaAcesso) lista.get(i);
-
                 if (user.equals(pessoaAcesso.getUsuario()) && pass.equals(pessoaAcesso.getSenha())){
                     Intent intent = new Intent(Login.this, MainActivity.class);
                     startActivity(intent);
-                    toast("Bem-vindo(a) " + pessoaAcesso.getUsuario());
+                    toast("Bem-vindo(a) (" + pessoaAcesso.getUsuario().toUpperCase() + ")");
+
+
                 }else{
-                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this);
+                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
                     adb.setTitle("ERRO");
-                    adb.setMessage("Dados incorretos ou não existem!");
+                    adb.setMessage("Dados incorretos!");
                     adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -102,12 +129,12 @@ public class Login extends AppCompatActivity {
                         }
                     });
                     adb.show();
-                    erro();
+                    errorAlert();
                 }
             }
 
         }else {
-            AlertDialog.Builder adb = new AlertDialog.Builder(Login.this);
+            AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
             adb.setTitle("Atenção!");
             adb.setMessage("Preencher usuario e senha"
                     + "\nA senha deve conter 4 caracteres!");
@@ -118,7 +145,7 @@ public class Login extends AppCompatActivity {
                 }
             });
             adb.show();
-            erro();
+            errorAlert();
         }
     }
 
@@ -126,7 +153,7 @@ public class Login extends AppCompatActivity {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
-    public void erro(){
+    public void errorAlert(){
         usuario.setText("");
         senha.setText("");
         usuario.setHintTextColor(Color.RED);

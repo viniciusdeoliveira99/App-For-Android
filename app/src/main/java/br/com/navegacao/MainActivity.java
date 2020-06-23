@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -107,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
             //MENU SAIR
             case R.id.nav_exit:
-                AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this, R.style.MyDialogTheme);
                 adb.setTitle("Confirmação");
                 adb.setMessage("Deseja sair do sistema?");
                 adb.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
@@ -139,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if(id == R.id.action_about){
-            AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
+            AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this, R.style.MyDialogTheme);
             adb.setTitle("Sobre");
             adb.setMessage("Sistema versão 1.0");
             adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {

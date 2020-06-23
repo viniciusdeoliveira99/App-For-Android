@@ -30,11 +30,12 @@
     <string name="log">Login</string>
     <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>
     <string name="inserir">Clique para cadastrar novo usuário</string>
-    <string name="exit">Encerrar</string>
+    <string name="exit">Encerrar sessão</string>
 
     <!-- PREFERENCES -->
     <string name="configApp">Configurações do App</string>
     <string name="receberEmail">Receber alerta por e-mail</string>
     <string name="modoNoturno">Modo noturno</string>
+    <string name="logado">Clique para manter usuário logado</string>
 
 </resources>

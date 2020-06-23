@@ -11,8 +11,9 @@ public class PrefsUtils {
         return sp.getBoolean("PREF_CHECK_PUSH", false);
     }
 
-    public static boolean isDarkModeOn(final Context context){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        return sp.getBoolean("isDarkModeOn", false);
+    public static void adicionaDarkMode(SharedPreferences preferences) {
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean("DARK_MODE_ON", true);
+        editor.apply();
     }
 }

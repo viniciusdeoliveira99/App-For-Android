@@ -18,5 +18,6 @@
     <color name="hintColor">#007acc</color>
     <color name="geral">#e6e6e6</color>
     <color name="editTextBack">#e6e6e6</color>
+    <color name="checkbox">#fff</color>
 
 </resources>

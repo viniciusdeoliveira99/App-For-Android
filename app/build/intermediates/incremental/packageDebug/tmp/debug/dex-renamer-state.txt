@@ -1,4 +1,4 @@
-#Mon Jun 22 16:50:19 BRT 2020
+#Tue Jun 23 16:03:06 BRT 2020
 base.0=C\:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
