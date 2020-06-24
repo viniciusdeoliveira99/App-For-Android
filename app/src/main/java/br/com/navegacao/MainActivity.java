@@ -2,6 +2,7 @@ package br.com.navegacao;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +20,7 @@ import com.google.android.material.navigation.NavigationView;
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
 import br.com.navegacao.fragment.ConfigFragment;
+import br.com.navegacao.util.PrefsUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences preferences = getSharedPreferences("userPreferences", MODE_PRIVATE);
+        final boolean marcado = preferences.getBoolean("marcadoCheck", false);
+
+
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {

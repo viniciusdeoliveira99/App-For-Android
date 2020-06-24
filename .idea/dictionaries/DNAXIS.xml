@@ -2,11 +2,13 @@
   <dictionary name="DNAXIS">
     <words>
       <w>cadastro</w>
+      <w>checkado</w>
       <w>configuracao</w>
       <w>configuracoes</w>
       <w>erro</w>
       <w>geral</w>
       <w>lista</w>
+      <w>marcado</w>
       <w>preferencia</w>
     </words>
   </dictionary>

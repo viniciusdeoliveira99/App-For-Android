@@ -5,6 +5,8 @@
     <color name="colorAccent">#4ca8e6</color>
     <color name="colorDefaultButton">#008ae6</color>
     <color name="colorPressed">#33adff</color>
+    <color name="signup">#668cff</color>
+    <color name="signupPressed">#90a1d5</color>
 
     <!-- CORES BOTOES -->
     <color name="colorOk">#0099e6</color>

@@ -7,6 +7,14 @@
     android:background="@color/backgroundColor"
     android:padding="10dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAlignment="center"
+        android:text="@string/cadastroUsuario"/>
+
         <EditText
             android:id="@+id/usuario"
             android:layout_width="match_parent"
@@ -40,7 +48,7 @@
             android:textColor="@color/textColor"
             android:textColorHint="@color/hintColor"
             android:backgroundTint="@color/editTextBack"
-            android:maxLength="20"
+            android:maxLength="11"
             android:inputType="phone"/>
 
         <EditText

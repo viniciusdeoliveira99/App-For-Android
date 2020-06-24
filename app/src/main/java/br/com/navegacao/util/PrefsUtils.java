@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class PrefsUtils {
 
     public static boolean isCheckPushOn(final Context context){

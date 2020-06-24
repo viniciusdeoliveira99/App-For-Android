@@ -27,9 +27,10 @@
     <!-- ITENS GERAIS -->
     <string name="filter">Organizar</string>
     <string name="content">User Image</string>
-    <string name="log">Login</string>
+    <string name="login">Login</string>
     <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>
-    <string name="inserir">Clique para cadastrar novo usuário</string>
+    <string name="inserir">Cadastrar usuário</string>
+    <string name="cadastroUsuario">Cadastro de novo usuário do App</string>
     <string name="exit">Encerrar sessão</string>
 
     <!-- PREFERENCES -->

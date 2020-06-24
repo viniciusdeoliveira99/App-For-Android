@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,7 +28,6 @@ public class Login extends AppCompatActivity {
     private EditText senha;
     private TextView inserir;
     private DBHelper dbHelper;
-    private CheckBox checkBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +39,6 @@ public class Login extends AppCompatActivity {
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
         inserir = (TextView)findViewById(R.id.inserir);
-        checkBox = (CheckBox)findViewById(R.id.check);
-
 
         //PREFERÊNCIAS MODO NOTURNO
         SharedPreferences sharedPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
@@ -55,35 +53,31 @@ public class Login extends AppCompatActivity {
                     AppCompatDelegate.MODE_NIGHT_NO);
         }
 
-//        //PREFERÊNCIAS CHECKBOX
-//        SharedPreferences preferences = getSharedPreferences("prefsShared", MODE_PRIVATE);
-//        final SharedPreferences.Editor editor = preferences.edit();
-//        final boolean checked = preferences.getBoolean("checked", false);
-//
-//        if(checked){
-//            editor.putBoolean("checked", true);
-//            editor.apply();
-//        }else{
-//            editor.putBoolean("checked", false);
-//            editor.apply();
-//        }
-//
-//        checkBox.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(checked){
-//                    editor.putBoolean("checked", false);
-//                    editor.apply();
-//
-//                }else{
-//                    editor.putBoolean("checked", true);
-//                    editor.apply();
-//                    checkBox.setChecked(true);
-//                }
-//            }
-//        });
+        //CHECKBOX PARA MANTER USUÁRIO LOGADO E INICIAR TELA INICIAL (MAIN ACTIVITY) DO SISTEMA
+        final CheckBox checkBox = (CheckBox)findViewById(R.id.checkBox);
+        SharedPreferences preferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
+        final SharedPreferences.Editor ed = preferences.edit();
 
+        if(preferences.contains("checked") && preferences.getBoolean("checked",false)) {
+            checkBox.setChecked(true);
+        }else {
+            checkBox.setChecked(false);
+        }
 
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(checkBox.isChecked()) {
+                    ed.putBoolean("checked", true);
+                    ed.apply();
+                }else{
+                    ed.putBoolean("checked", false);
+                    ed.apply();
+                }
+            }
+        });
+
+        //BOTÃO LOGAR
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,6 +85,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        //BOTÃO INSERIR NOVO USUÁRIO DO APP
         inserir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,6 +95,7 @@ public class Login extends AppCompatActivity {
         });
     }
 
+    //MÉTODO LOGAR DO APP
     public void logar() {
         String user = usuario.getText().toString();
         String pass = senha.getText().toString();
@@ -116,7 +112,6 @@ public class Login extends AppCompatActivity {
                     Intent intent = new Intent(Login.this, MainActivity.class);
                     startActivity(intent);
                     toast("Bem-vindo(a) (" + pessoaAcesso.getUsuario().toUpperCase() + ")");
-
 
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
@@ -153,6 +148,7 @@ public class Login extends AppCompatActivity {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
+    //ERROR ALERT
     public void errorAlert(){
         usuario.setText("");
         senha.setText("");

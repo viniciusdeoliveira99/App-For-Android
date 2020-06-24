@@ -1023,6 +1023,8 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color signup
+color signupPressed
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1535,6 +1537,7 @@ drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
 drawable seletor
 drawable seletor_cancelar
+drawable seletor_inserir_cadastro
 drawable seletor_ok
 drawable side_nav_bar
 drawable test_custom_background
@@ -1634,7 +1637,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
-id check
+id checkBox
 id checkbox
 id checked
 id chip
@@ -1686,7 +1689,6 @@ id filter_chip
 id fitToContents
 id fixed
 id forever
-id forget
 id fragLayout
 id fragment_container_view_tag
 id ghost_view
@@ -2088,6 +2090,7 @@ string appbar_scrolling_view_behavior
 string atualizar
 string bottom_sheet_behavior
 string cadastrar
+string cadastroUsuario
 string cancelar
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -2112,6 +2115,7 @@ string idade
 string inserir
 string log
 string logado
+string login
 string menu_config
 string menu_exit
 string menu_home

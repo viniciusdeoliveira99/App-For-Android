@@ -54,13 +54,11 @@ public class ConfigFragment extends BaseFragment{
             @Override
             public void onClick(View v) {
                 if (isDarkModeOn) {
-
                     AppCompatDelegate.setDefaultNightMode(
                             AppCompatDelegate.MODE_NIGHT_NO);
 
                     editor.putBoolean("isDarkModeOn", false);
                     editor.apply();
-
                 }else {
                     AppCompatDelegate.setDefaultNightMode(
                             AppCompatDelegate.MODE_NIGHT_YES);
