@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         //MÉTODO DO MENU LATERAL
         setupNavDrawer();
 
-        //ADD O FRAGMENT
+        //ADD O FRAGMENT NA TELA
         if (savedInstanceState == null) {
             CadastroFragment frag = new CadastroFragment();
             frag.setArguments(getIntent().getExtras());
@@ -69,16 +70,13 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         navView = findViewById(R.id.nav_view);
 
-//        pessoaAcesso = new PessoaAcesso();
-//        dbHelper = new DBHelper(this);
-//        pessoaAcesso = dbHelper.getDados(pessoaID);
-//
-//        View header = navView.getHeaderView(0);
-//        TextView user = header.findViewById(R.id.usuarioLogado);
-//        TextView email = header.findViewById(R.id.usuarioEmail);
-//
-//        user.setText(pessoaAcesso.getUsuario());
-//        email.setText(pessoaAcesso.getEmail());
+
+        View header = navView.getHeaderView(0);
+        TextView user = header.findViewById(R.id.usuarioLogado);
+        TextView email = header.findViewById(R.id.usuarioEmail);
+
+        user.setText("TESTE");
+        email.setText("TESTE@TESTE.COM");
 
 
         if (drawerLayout != null) {

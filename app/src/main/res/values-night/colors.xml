@@ -19,5 +19,6 @@
     <color name="geral">#262626</color>
     <color name="editTextBack">#1a1a1a</color>
     <color name="checkbox">#0d0d0d</color>
+    <color name="iconColor">#ccd8ff</color>
 
 </resources>

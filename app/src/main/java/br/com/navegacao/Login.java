@@ -28,6 +28,7 @@ public class Login extends AppCompatActivity {
     private EditText senha;
     private TextView inserir;
     private DBHelper dbHelper;
+    private PessoaAcesso pa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,13 +106,14 @@ public class Login extends AppCompatActivity {
         if (!user.isEmpty() && !pass.isEmpty() && pass.length() >= 4) {
 
             List<PessoaAcesso> lista = dbHelper.buscarDados();
+
             for (int i = 0; i < lista.size(); i++) {
 
-                PessoaAcesso pessoaAcesso = (PessoaAcesso) lista.get(i);
-                if (user.equals(pessoaAcesso.getUsuario()) && pass.equals(pessoaAcesso.getSenha())){
-                    Intent intent = new Intent(Login.this, MainActivity.class);
-                    startActivity(intent);
-                    toast("Bem-vindo(a) (" + pessoaAcesso.getUsuario().toUpperCase() + ")");
+                pa = lista.get(i);
+
+                if (user.equals(pa.getUsuario()) && pass.equals(pa.getSenha())){
+                    startActivity(new Intent(Login.this, MainActivity.class));
+                    finish();
 
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
@@ -142,10 +144,6 @@ public class Login extends AppCompatActivity {
             adb.show();
             errorAlert();
         }
-    }
-
-    public void toast(String msg){
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     //ERROR ALERT

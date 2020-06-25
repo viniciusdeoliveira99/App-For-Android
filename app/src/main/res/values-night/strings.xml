@@ -29,7 +29,7 @@
     <string name="content">User Image</string>
     <string name="log">Login</string>
     <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>
-    <string name="inserir">Clique para cadastrar novo usuário</string>
+    <string name="inserir">Cadastrar usuário</string>
     <string name="exit">Encerrar</string>
 
     <!-- PREFERENCES -->
