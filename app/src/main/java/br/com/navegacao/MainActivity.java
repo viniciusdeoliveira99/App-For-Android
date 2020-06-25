@@ -41,13 +41,16 @@ public class MainActivity extends AppCompatActivity {
         final boolean marcado = preferences.getBoolean("marcadoCheck", false);
 
 
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navView = findViewById(R.id.nav_view);
+
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
         }
 
-        //MÉTODO DO MENU LATERAL
+        //CHAMA MÉTODO DO DRAWER LAYOUT
         setupNavDrawer();
 
         //ADD O FRAGMENT NA TELA
@@ -67,10 +70,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navView = findViewById(R.id.nav_view);
-
-
         View header = navView.getHeaderView(0);
         TextView user = header.findViewById(R.id.usuarioLogado);
         TextView email = header.findViewById(R.id.usuarioEmail);
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         user.setText("TESTE");
         email.setText("TESTE@TESTE.COM");
 
-
+        
         if (drawerLayout != null) {
             navView.setNavigationItemSelectedListener(
                     new NavigationView.OnNavigationItemSelectedListener() {
