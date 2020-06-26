@@ -3,14 +3,14 @@ package br.com.navegacao.domain;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
+
 import java.util.LinkedList;
 import java.util.List;
 
 import br.com.navegacao.PessoaAcesso;
-
 
 public class PersonDBHelper extends SQLiteOpenHelper {
 
@@ -46,14 +46,18 @@ public class PersonDBHelper extends SQLiteOpenHelper {
 
 
     public void salvarCadastro(PessoaAcesso pessoaAcesso) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(NOME, pessoaAcesso.getNome());
-        values.put(IDADE, pessoaAcesso.getIdade());
-        values.put(OCUPACAO, pessoaAcesso.getOcupacao());
-        // insert
-        db.insert(NOME_TABELA,null, values);
-        db.close();
+        try{
+            SQLiteDatabase db = this.getWritableDatabase();
+            ContentValues values = new ContentValues();
+            values.put(NOME, pessoaAcesso.getNome());
+            values.put(IDADE, pessoaAcesso.getIdade());
+            values.put(OCUPACAO, pessoaAcesso.getOcupacao());
+            // insert
+            db.insert(NOME_TABELA,null, values);
+            db.close();
+        }catch (SQLException error){
+            error.getMessage();
+        }
     }
 
     /**Query records, give options to filter results**/
@@ -84,6 +88,8 @@ public class PersonDBHelper extends SQLiteOpenHelper {
 
             } while (cursor.moveToNext());
         }
+        cursor.close();
+        db.close();
         return personLinkedList;
     }
 
@@ -108,6 +114,8 @@ public class PersonDBHelper extends SQLiteOpenHelper {
                 personLinkedList.add(pessoaAcesso);
             } while (cursor.moveToNext());
         }
+        cursor.close();
+        db.close();
         return personLinkedList;
     }
 	
@@ -127,6 +135,8 @@ public class PersonDBHelper extends SQLiteOpenHelper {
             receivedPerson.setIdade(cursor.getString(cursor.getColumnIndex(IDADE)));
             receivedPerson.setOcupacao(cursor.getString(cursor.getColumnIndex(OCUPACAO)));
         }
+        cursor.close();
+        db.close();
         return receivedPerson;
     }
 
@@ -135,14 +145,16 @@ public class PersonDBHelper extends SQLiteOpenHelper {
     public void deletarCadastro(long id, Context context) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM "+NOME_TABELA+" WHERE _id='"+id+"'");
+        db.close();
     }
 
     /**update record**/
     public void atualizarCadastro(long personId, Context context, PessoaAcesso updatedperson) {
-        SQLiteDatabase db = this.getWritableDatabase();
 
+        SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("UPDATE  "+NOME_TABELA+" SET nome ='"+ updatedperson.getNome() + "', idade ='"
                 + updatedperson.getIdade()+ "', ocupacao ='"+ updatedperson.getOcupacao()
                 + "'  WHERE _id='" + personId + "'");
+        db.close();
     }
 }

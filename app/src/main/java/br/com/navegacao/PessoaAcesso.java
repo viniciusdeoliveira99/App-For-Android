@@ -3,8 +3,6 @@ package br.com.navegacao;
 public class PessoaAcesso {
 
     private long id;
-    private String usuario;
-    private String senha;
     private String telefone;
     private String email;
     private String nome;
@@ -36,7 +34,6 @@ public class PessoaAcesso {
         this.ocupacao = ocupacao;
     }
 
-
     public String getTelefone() {
         return telefone;
     }
@@ -53,22 +50,6 @@ public class PessoaAcesso {
         this.email = email;
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
     public long getId() {
         return id;
     }
@@ -76,6 +57,7 @@ public class PessoaAcesso {
     public void setId(long id) {
         this.id = id;
     }
+
 
     public PessoaAcesso(){
 

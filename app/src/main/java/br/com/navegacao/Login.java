@@ -5,13 +5,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,12 +23,14 @@ import br.com.navegacao.domain.DBHelper;
 
 public class Login extends AppCompatActivity {
 
+    private static final String TAG = "TESTE";
     private Button button;
     private EditText usuario;
     private EditText senha;
     private TextView inserir;
     private DBHelper dbHelper;
-    private PessoaAcesso pa;
+    private Usuario usuarioLogin;
+    private long pessoaID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,8 @@ public class Login extends AppCompatActivity {
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
         inserir = (TextView)findViewById(R.id.inserir);
+
+
 
         //PREFERÊNCIAS MODO NOTURNO
         SharedPreferences sharedPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
@@ -54,7 +58,7 @@ public class Login extends AppCompatActivity {
                     AppCompatDelegate.MODE_NIGHT_NO);
         }
 
-        //CHECKBOX PARA MANTER USUÁRIO LOGADO E INICIAR TELA INICIAL (MAIN ACTIVITY) DO SISTEMA
+        //CHECKBOX PARA MANTER USUÁRIO LOGADO
         final CheckBox checkBox = (CheckBox)findViewById(R.id.checkBox);
         SharedPreferences preferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
         final SharedPreferences.Editor ed = preferences.edit();
@@ -103,17 +107,19 @@ public class Login extends AppCompatActivity {
 
         dbHelper = new DBHelper(this);
 
+
         if (!user.isEmpty() && !pass.isEmpty() && pass.length() >= 4) {
 
-            List<PessoaAcesso> lista = dbHelper.buscarDados();
+            List<Usuario> lista = dbHelper.buscarDados();
 
             for (int i = 0; i < lista.size(); i++) {
 
-                pa = lista.get(i);
+                usuarioLogin = lista.get(i);
 
-                if (user.equals(pa.getUsuario()) && pass.equals(pa.getSenha())){
+                if (user.equals(usuarioLogin.getUsuario()) && pass.equals(usuarioLogin.getSenha())){
                     startActivity(new Intent(Login.this, MainActivity.class));
                     finish();
+                    Log.d(TAG, "ID: " + pessoaID);
 
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);

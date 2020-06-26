@@ -11,7 +11,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.navegacao.PessoaAcesso;
+import br.com.navegacao.Usuario;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -33,12 +33,12 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(" CREATE TABLE " + TABLE_NAME + " (" +
-                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, " +
                 COLUMN_USUARIO + " TEXT NOT NULL, " +
                 COLUMN_SENHA + " TEXT NOT NULL," +
                 COLUMN_TELEFONE + " TEXT NOT NULL, " +
                 COLUMN_EMAIL + " TEXT NOT NULL);");
-        Log.d(TAG, "BANCO DE DADOS ACESSO CRIADO COM SUCESSO!!!  ");
+        Log.d(TAG, "TABELA ACESSO CRIADA!");
     }
 
     @Override
@@ -59,93 +59,94 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     //INSERIR OS DADOS
-    public boolean create(PessoaAcesso pessoaAcesso){
-        SQLiteDatabase db = getWritableDatabase();
+    public void create(Usuario usuarioCadastro){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues valores = new ContentValues();
 
-        try{
-            ContentValues contentValues = new ContentValues();
-            contentValues.put(COLUMN_USUARIO, pessoaAcesso.getUsuario());
-            contentValues.put(COLUMN_SENHA, pessoaAcesso.getSenha());
-            contentValues.put(COLUMN_TELEFONE, pessoaAcesso.getTelefone());
-            contentValues.put(COLUMN_EMAIL, pessoaAcesso.getEmail());
+        valores.put(COLUMN_ID, usuarioCadastro.getId());
+        valores.put(COLUMN_USUARIO, usuarioCadastro.getUsuario());
+        valores.put(COLUMN_SENHA, usuarioCadastro.getSenha());
+        valores.put(COLUMN_TELEFONE, usuarioCadastro.getTelefone());
+        valores.put(COLUMN_EMAIL, usuarioCadastro.getEmail());
 
-            long rows = db.insert(TABLE_NAME, null, contentValues);
-            Log.d(TAG, "DADOS INSERIDOS!");
-            return rows > 0;
-        }catch (SQLException error){
-            error.getMessage();
-        }finally {
-            db.close();
-        }
-        return false;
+        db.insert(TABLE_NAME, null, valores);
+        db.close();
+        Log.d(TAG, "CADASTRO DE USUÁRIO REALIZADO!");
     }
 
-
-    public List<PessoaAcesso> findAll(){
-        List<PessoaAcesso> pa = new ArrayList<>();
-
-        try{
-            SQLiteDatabase db = getWritableDatabase();
-            Cursor cursor = db.rawQuery("select * from acesso", null);
-            if(cursor.moveToFirst()){
-
-                do{
-                    PessoaAcesso pessoaAcesso = new PessoaAcesso();
-                    pessoaAcesso.setId(cursor.getLong(0));
-                    pessoaAcesso.setUsuario(cursor.getString(1));
-                    pessoaAcesso.setSenha(cursor.getString(2));
-
-                    pa.add(pessoaAcesso);
-
-                }while (cursor.moveToNext());
-            }
-            db.close();
-
-        }catch(Exception e){
-            e.getMessage();
-        }
-        return pa;
-    }
+//    public List<PessoaAcesso> findAll(){
+//        List<PessoaAcesso> pa = new ArrayList<>();
+//
+//        try{
+//            SQLiteDatabase db = getWritableDatabase();
+//            Cursor cursor = db.rawQuery("select * from acesso", null);
+//            if(cursor.moveToFirst()){
+//
+//                do{
+//                    PessoaAcesso pessoaAcesso = new PessoaAcesso();
+//                    pessoaAcesso.setId(cursor.getLong(0));
+//                    pessoaAcesso.setUsuario(cursor.getString(1));
+//                    pessoaAcesso.setSenha(cursor.getString(2));
+//
+//                    pa.add(pessoaAcesso);
+//
+//                }while (cursor.moveToNext());
+//            }
+//            db.close();
+//
+//        }catch(Exception e){
+//            e.getMessage();
+//        }
+//        return pa;
+//    }
 
     //MÉTODO PARA BUSCAR OS DADOS DO USUÁRIO NO BANCO
-    public List<PessoaAcesso> buscarDados(){
-        List<PessoaAcesso> listarDados = new ArrayList<>();
+    public List<Usuario> buscarDados(){
+        List<Usuario> carregarListaUsuario = new ArrayList<>();
 
         try{
             SQLiteDatabase db = getWritableDatabase();
-            Cursor cursor = db.rawQuery("select " + COLUMN_ID + ", " + COLUMN_USUARIO + ", " + COLUMN_SENHA + " from " + TABLE_NAME, null);
+            Cursor cursor = db.rawQuery("select " + COLUMN_ID + ", "
+                    + COLUMN_USUARIO + ", "
+                    + COLUMN_SENHA + " from "
+                    + TABLE_NAME, null);
 
             if(cursor.moveToFirst()){
                 do{
-                    PessoaAcesso pessoaAcesso = new PessoaAcesso();
-                    pessoaAcesso.setId(cursor.getLong(0));
-                    pessoaAcesso.setUsuario(cursor.getString(1));
-                    pessoaAcesso.setSenha(cursor.getString(2));
+                    Usuario user = new Usuario();
+                    user.setId(cursor.getLong(0));
+                    user.setUsuario(cursor.getString(1));
+                    user.setSenha(cursor.getString(2));
 
-                    listarDados.add(pessoaAcesso);
+                    carregarListaUsuario.add(user);
 
                 }while(cursor.moveToNext());
             }
+            cursor.close();
             db.close();
 
         }catch(SQLException error){
             error.getMessage();
         }
-        return listarDados;
+        return carregarListaUsuario;
     }
 
 
-    public PessoaAcesso getDados(long id){
+    public Usuario getDados(long id){
+
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT  * FROM " + TABLE_NAME + " WHERE _id="+ id;
         Cursor cursor = db.rawQuery(query, null);
 
-        PessoaAcesso receivedPerson = new PessoaAcesso();
+        Usuario usuarioRecebido = new Usuario();
+
         if(cursor.getCount() > 0) {
             cursor.moveToFirst();
-            receivedPerson.setUsuario(cursor.getString(cursor.getColumnIndex(COLUMN_USUARIO)));
-            receivedPerson.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_EMAIL)));
+            usuarioRecebido.setUsuario(cursor.getString(cursor.getColumnIndex(COLUMN_USUARIO)));
+            usuarioRecebido.setSenha(cursor.getString(cursor.getColumnIndex(COLUMN_SENHA)));
         }
-        return receivedPerson;
+        cursor.close();
+        db.close();
+        return usuarioRecebido;
     }
 }

@@ -60,17 +60,17 @@ public class Cadastro extends AppCompatActivity {
         String mail = email.getText().toString();
 
         dbHelper = new DBHelper(this);
-        PessoaAcesso p = new PessoaAcesso();
+        Usuario usuarioLogin = new Usuario();
 
-        p.setUsuario(usuario.getText().toString());
-        p.setSenha(senha.getText().toString());
-        p.setTelefone(telefone.getText().toString());
-        p.setEmail(email.getText().toString());
+        usuarioLogin.setUsuario(usuario.getText().toString());
+        usuarioLogin.setSenha(senha.getText().toString());
+        usuarioLogin.setTelefone(telefone.getText().toString());
+        usuarioLogin.setEmail(email.getText().toString());
 
         if(!user.isEmpty() && !pass.isEmpty() && !phone.isEmpty() && !mail.isEmpty() && pass.length() >= 4) {
-            dbHelper.create(p);
+            dbHelper.create(usuarioLogin);
             goBackMain();
-            toast("Usuário: (" + p.getUsuario() + ") cadastrado(a)");
+            toast("Usuário: (" + usuarioLogin.getUsuario() + ") cadastrado(a)");
         }else{
             AlertDialog.Builder adb = new AlertDialog.Builder(Cadastro.this, R.style.MyDialogTheme);
             adb.setTitle("Atenção");
@@ -81,7 +81,6 @@ public class Cadastro extends AppCompatActivity {
                     dialog.dismiss();
                 }
             });
-
             adb.show();
             usuario.setHintTextColor(Color.RED);
             senha.setHintTextColor(Color.RED);

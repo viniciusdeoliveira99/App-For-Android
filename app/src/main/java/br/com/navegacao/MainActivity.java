@@ -70,12 +70,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        View header = navView.getHeaderView(0);
-        TextView user = header.findViewById(R.id.usuarioLogado);
-        TextView email = header.findViewById(R.id.usuarioEmail);
+        //get intent to get person id
+        try {
+            pessoaID = getIntent().getLongExtra("USER_ID", 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-        user.setText("TESTE");
-        email.setText("TESTE@TESTE.COM");
+        dbHelper = new DBHelper(this);
+        View header = navView.getHeaderView(0);
+        TextView usuarioLogado = header.findViewById(R.id.usuarioLogado);
+        TextView usuarioEmail = header.findViewById(R.id.usuarioEmail);
+
+        Usuario usuarioRecebido = dbHelper.getDados(pessoaID);
+        usuarioLogado.setText(usuarioRecebido.getUsuario());
+        usuarioEmail.setText(usuarioRecebido.getEmail());
 
         
         if (drawerLayout != null) {
