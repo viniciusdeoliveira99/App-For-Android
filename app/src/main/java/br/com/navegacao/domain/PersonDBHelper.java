@@ -150,7 +150,6 @@ public class PersonDBHelper extends SQLiteOpenHelper {
 
     /**update record**/
     public void atualizarCadastro(long personId, Context context, PessoaAcesso updatedperson) {
-
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("UPDATE  "+NOME_TABELA+" SET nome ='"+ updatedperson.getNome() + "', idade ='"
                 + updatedperson.getIdade()+ "', ocupacao ='"+ updatedperson.getOcupacao()

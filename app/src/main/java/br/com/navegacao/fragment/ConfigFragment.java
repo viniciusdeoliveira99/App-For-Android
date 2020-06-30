@@ -1,13 +1,11 @@
 package br.com.navegacao.fragment;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import androidx.annotation.RequiresApi;
@@ -16,7 +14,6 @@ import androidx.appcompat.app.AppCompatDelegate;
 import java.util.Objects;
 
 import br.com.navegacao.R;
-import br.com.navegacao.util.PrefsUtils;
 
 import static android.content.Context.MODE_PRIVATE;
 

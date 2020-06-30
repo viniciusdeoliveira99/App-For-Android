@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -21,15 +22,12 @@ import com.google.android.material.navigation.NavigationView;
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
 import br.com.navegacao.fragment.ConfigFragment;
-import br.com.navegacao.util.PrefsUtils;
 
 public class MainActivity extends AppCompatActivity {
 
     protected DrawerLayout drawerLayout;
     protected Toolbar toolbar;
     protected DBHelper dbHelper;
-    protected PessoaAcesso pessoaAcesso;
-    private long pessoaID;
     protected NavigationView navView;
 
     @Override
@@ -70,28 +68,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //get intent to get person id
-        try {
-            pessoaID = getIntent().getLongExtra("USER_ID", 1);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
         dbHelper = new DBHelper(this);
         View header = navView.getHeaderView(0);
         TextView usuarioLogado = header.findViewById(R.id.usuarioLogado);
         TextView usuarioEmail = header.findViewById(R.id.usuarioEmail);
 
-        Usuario usuarioRecebido = dbHelper.getDados(pessoaID);
-        usuarioLogado.setText(usuarioRecebido.getUsuario());
-        usuarioEmail.setText(usuarioRecebido.getEmail());
+        usuarioLogado.setText("TESTE");
+        usuarioEmail.setText("TESTE@TESTE.COM");
 
         
         if (drawerLayout != null) {
             navView.setNavigationItemSelectedListener(
                     new NavigationView.OnNavigationItemSelectedListener() {
                         @Override
-                        public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                             menuItem.setChecked(true);
                             closeDrawer();
                             // Trata o evento do menu

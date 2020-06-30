@@ -16,11 +16,12 @@
 
     <!-- DAY MODE-->
     <color name="backgroundColor">#ffff</color>
-    <color name="textColor">@color/colorPrimary</color>
+    <color name="textColor">#003d66</color>
     <color name="hintColor">#007acc</color>
     <color name="geral">#e6e6e6</color>
     <color name="editTextBack">#e6e6e6</color>
     <color name="checkbox">#fff</color>
-    <color name="iconColor">#0040ff</color>
+    <color name="iconColor">#003d66</color>
+    <color name="colorChecked">#bfbfbf</color>
 
 </resources>

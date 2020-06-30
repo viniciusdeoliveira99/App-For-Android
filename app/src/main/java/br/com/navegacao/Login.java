@@ -6,12 +6,13 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,10 +28,11 @@ public class Login extends AppCompatActivity {
     private Button button;
     private EditText usuario;
     private EditText senha;
-    private TextView inserir;
     private DBHelper dbHelper;
     private Usuario usuarioLogin;
-    private long pessoaID;
+    private Usuario queriedUser;
+
+    private long receivedUserId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +43,18 @@ public class Login extends AppCompatActivity {
         button = (Button) findViewById(R.id.login);
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
-        inserir = (TextView)findViewById(R.id.inserir);
 
+        dbHelper = new DBHelper(this);
+
+        try {
+            //get intent to get person id
+            receivedUserId = getIntent().getLongExtra("USER_ID", 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        Usuario queriedUser = dbHelper.getUser(receivedUserId);
 
 
         //PREFERÊNCIAS MODO NOTURNO
@@ -89,16 +101,8 @@ public class Login extends AppCompatActivity {
                 logar();
             }
         });
-
-        //BOTÃO INSERIR NOVO USUÁRIO DO APP
-        inserir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Cadastro.class);
-                startActivity(intent);
-            }
-        });
     }
+
 
     //MÉTODO LOGAR DO APP
     public void logar() {
@@ -106,7 +110,6 @@ public class Login extends AppCompatActivity {
         String pass = senha.getText().toString();
 
         dbHelper = new DBHelper(this);
-
 
         if (!user.isEmpty() && !pass.isEmpty() && pass.length() >= 4) {
 
@@ -119,7 +122,7 @@ public class Login extends AppCompatActivity {
                 if (user.equals(usuarioLogin.getUsuario()) && pass.equals(usuarioLogin.getSenha())){
                     startActivity(new Intent(Login.this, MainActivity.class));
                     finish();
-                    Log.d(TAG, "ID: " + pessoaID);
+                    Log.d(TAG, "ID: " + queriedUser);
 
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
@@ -150,6 +153,23 @@ public class Login extends AppCompatActivity {
             adb.show();
             errorAlert();
         }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_superior, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.criarUsuario) {
+            startActivity(new Intent(Login.this, Cadastro.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     //ERROR ALERT

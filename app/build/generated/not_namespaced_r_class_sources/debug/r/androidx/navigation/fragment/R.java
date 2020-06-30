@@ -58,10 +58,10 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f0600b3;
-        public static final int notification_icon_bg_color = 0x7f0600b4;
-        public static final int ripple_material_light = 0x7f0600c0;
-        public static final int secondary_text_default_material_light = 0x7f0600c2;
+        public static final int notification_action_color_filter = 0x7f0600b4;
+        public static final int notification_icon_bg_color = 0x7f0600b5;
+        public static final int ripple_material_light = 0x7f0600c1;
+        public static final int secondary_text_default_material_light = 0x7f0600c3;
     }
     public static final class dimen {
         private dimen() {}
@@ -149,12 +149,12 @@ public final class R {
         public static final int async = 0x7f090049;
         public static final int blocking = 0x7f090050;
         public static final int chronometer = 0x7f090063;
-        public static final int dialog_button = 0x7f090078;
-        public static final int forever = 0x7f090091;
-        public static final int fragment_container_view_tag = 0x7f090093;
-        public static final int icon = 0x7f09009c;
-        public static final int icon_group = 0x7f09009e;
-        public static final int info = 0x7f0900a3;
+        public static final int dialog_button = 0x7f090079;
+        public static final int forever = 0x7f090092;
+        public static final int fragment_container_view_tag = 0x7f090094;
+        public static final int icon = 0x7f09009d;
+        public static final int icon_group = 0x7f09009f;
+        public static final int info = 0x7f0900a4;
         public static final int italic = 0x7f0900a6;
         public static final int line1 = 0x7f0900ab;
         public static final int line3 = 0x7f0900ac;

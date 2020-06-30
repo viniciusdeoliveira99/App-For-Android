@@ -11,6 +11,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.navegacao.PessoaAcesso;
 import br.com.navegacao.Usuario;
 
 public class DBHelper extends SQLiteOpenHelper {
@@ -74,31 +75,6 @@ public class DBHelper extends SQLiteOpenHelper {
         Log.d(TAG, "CADASTRO DE USUÁRIO REALIZADO!");
     }
 
-//    public List<PessoaAcesso> findAll(){
-//        List<PessoaAcesso> pa = new ArrayList<>();
-//
-//        try{
-//            SQLiteDatabase db = getWritableDatabase();
-//            Cursor cursor = db.rawQuery("select * from acesso", null);
-//            if(cursor.moveToFirst()){
-//
-//                do{
-//                    PessoaAcesso pessoaAcesso = new PessoaAcesso();
-//                    pessoaAcesso.setId(cursor.getLong(0));
-//                    pessoaAcesso.setUsuario(cursor.getString(1));
-//                    pessoaAcesso.setSenha(cursor.getString(2));
-//
-//                    pa.add(pessoaAcesso);
-//
-//                }while (cursor.moveToNext());
-//            }
-//            db.close();
-//
-//        }catch(Exception e){
-//            e.getMessage();
-//        }
-//        return pa;
-//    }
 
     //MÉTODO PARA BUSCAR OS DADOS DO USUÁRIO NO BANCO
     public List<Usuario> buscarDados(){
@@ -106,7 +82,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         try{
             SQLiteDatabase db = getWritableDatabase();
-            Cursor cursor = db.rawQuery("select " + COLUMN_ID + ", "
+            Cursor cursor = db.rawQuery("select "
+                    + COLUMN_ID + ", "
                     + COLUMN_USUARIO + ", "
                     + COLUMN_SENHA + " from "
                     + TABLE_NAME, null);
@@ -132,21 +109,20 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public Usuario getDados(long id){
-
+    public Usuario getUser(long id){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT  * FROM " + TABLE_NAME + " WHERE _id="+ id;
         Cursor cursor = db.rawQuery(query, null);
 
-        Usuario usuarioRecebido = new Usuario();
-
+        Usuario receivedUser = new Usuario();
         if(cursor.getCount() > 0) {
             cursor.moveToFirst();
-            usuarioRecebido.setUsuario(cursor.getString(cursor.getColumnIndex(COLUMN_USUARIO)));
-            usuarioRecebido.setSenha(cursor.getString(cursor.getColumnIndex(COLUMN_SENHA)));
+            receivedUser.setUsuario(cursor.getString(cursor.getColumnIndex(COLUMN_USUARIO)));
+            receivedUser.setSenha(cursor.getString(cursor.getColumnIndex(COLUMN_SENHA)));
         }
+
         cursor.close();
         db.close();
-        return usuarioRecebido;
+        return receivedUser;
     }
 }
