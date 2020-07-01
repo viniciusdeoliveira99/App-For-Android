@@ -81,15 +81,13 @@ public class Cadastro extends AppCompatActivity {
                     dialog.dismiss();
                 }
             });
+
             adb.show();
             usuario.setHintTextColor(Color.RED);
             senha.setHintTextColor(Color.RED);
             telefone.setHintTextColor(Color.RED);
             email.setHintTextColor(Color.RED);
             usuario.requestFocus();
-            //            if(pass.length() < 4){
-//                toast("A senha deve conter 4 caracteres!");
-//            }
         }
     }
 

@@ -30,7 +30,6 @@ public class Login extends AppCompatActivity {
     private EditText senha;
     private DBHelper dbHelper;
     private Usuario usuarioLogin;
-    private Usuario queriedUser;
 
     private long receivedUserId;
 
@@ -43,18 +42,6 @@ public class Login extends AppCompatActivity {
         button = (Button) findViewById(R.id.login);
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
-
-        dbHelper = new DBHelper(this);
-
-        try {
-            //get intent to get person id
-            receivedUserId = getIntent().getLongExtra("USER_ID", 1);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-        Usuario queriedUser = dbHelper.getUser(receivedUserId);
 
 
         //PREFERÊNCIAS MODO NOTURNO
@@ -119,24 +106,23 @@ public class Login extends AppCompatActivity {
 
                 usuarioLogin = lista.get(i);
 
-                if (user.equals(usuarioLogin.getUsuario()) && pass.equals(usuarioLogin.getSenha())){
+                if (user.equals(usuarioLogin.getUsuario()) && pass.equals(usuarioLogin.getSenha())) {
                     startActivity(new Intent(Login.this, MainActivity.class));
-                    finish();
-                    Log.d(TAG, "ID: " + queriedUser);
-
-                }else{
-                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
-                    adb.setTitle("ERRO");
-                    adb.setMessage("Dados incorretos!");
-                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-                    adb.show();
-                    errorAlert();
+                    Log.d(TAG, "ID: " + usuarioLogin.getId());
                 }
+//                else{
+//                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
+//                    adb.setTitle("ERRO");
+//                    adb.setMessage("Dados incorretos!");
+//                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            dialog.dismiss();
+//                        }
+//                    });
+//                    adb.show();
+//                    errorAlert();
+//                }
             }
 
         }else {

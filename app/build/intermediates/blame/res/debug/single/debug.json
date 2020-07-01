@@ -2744,12 +2744,12 @@
         "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_seletor_state.xml.flat",
         "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\drawable\\seletor_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_fab.png.flat",

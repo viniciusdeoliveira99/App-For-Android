@@ -19,6 +19,8 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.List;
+
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
 import br.com.navegacao.fragment.ConfigFragment;
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected Toolbar toolbar;
     protected DBHelper dbHelper;
     protected NavigationView navView;
+    protected Usuario usuarioHeader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,15 +72,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //NAV HEADER
         dbHelper = new DBHelper(this);
-        View header = navView.getHeaderView(0);
-        TextView usuarioLogado = header.findViewById(R.id.usuarioLogado);
-        TextView usuarioEmail = header.findViewById(R.id.usuarioEmail);
+        List<Usuario> listarDadosUsuario = dbHelper.getDadosHeader();
 
-        usuarioLogado.setText("TESTE");
-        usuarioEmail.setText("TESTE@TESTE.COM");
+        for(int i = 0; i < listarDadosUsuario.size(); i++){
 
-        
+            usuarioHeader = listarDadosUsuario.get(i);
+
+            View header = navView.getHeaderView(0);
+            TextView usuarioLogado = header.findViewById(R.id.usuarioLogado);
+            TextView usuarioEmail = header.findViewById(R.id.usuarioEmail);
+
+            usuarioLogado.setText(usuarioHeader.getUsuario());
+            usuarioEmail.setText(usuarioHeader.getEmail());
+        }
+
+
         if (drawerLayout != null) {
             navView.setNavigationItemSelectedListener(
                     new NavigationView.OnNavigationItemSelectedListener() {

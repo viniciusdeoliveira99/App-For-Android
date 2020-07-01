@@ -11,7 +11,6 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.navegacao.PessoaAcesso;
 import br.com.navegacao.Usuario;
 
 public class DBHelper extends SQLiteOpenHelper {
@@ -34,7 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(" CREATE TABLE " + TABLE_NAME + " (" +
-                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, " +
+                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
                 COLUMN_USUARIO + " TEXT NOT NULL, " +
                 COLUMN_SENHA + " TEXT NOT NULL," +
                 COLUMN_TELEFONE + " TEXT NOT NULL, " +
@@ -64,7 +63,6 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues valores = new ContentValues();
 
-        valores.put(COLUMN_ID, usuarioCadastro.getId());
         valores.put(COLUMN_USUARIO, usuarioCadastro.getUsuario());
         valores.put(COLUMN_SENHA, usuarioCadastro.getSenha());
         valores.put(COLUMN_TELEFONE, usuarioCadastro.getTelefone());
@@ -109,20 +107,22 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public Usuario getUser(long id){
+    public Usuario obterUsuario(long id){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT  * FROM " + TABLE_NAME + " WHERE _id="+ id;
         Cursor cursor = db.rawQuery(query, null);
 
-        Usuario receivedUser = new Usuario();
+        Usuario usuarioRecebido = new Usuario();
         if(cursor.getCount() > 0) {
             cursor.moveToFirst();
-            receivedUser.setUsuario(cursor.getString(cursor.getColumnIndex(COLUMN_USUARIO)));
-            receivedUser.setSenha(cursor.getString(cursor.getColumnIndex(COLUMN_SENHA)));
-        }
 
+            usuarioRecebido.setNome(cursor.getString(cursor.getColumnIndex(NOME)));
+            usuarioRecebido.setIdade(cursor.getString(cursor.getColumnIndex(IDADE)));
+            usuarioRecebido.setOcupacao(cursor.getString(cursor.getColumnIndex(OCUPACAO)));
+        }
+        
         cursor.close();
         db.close();
-        return receivedUser;
+        return receivedPerson;
     }
 }
