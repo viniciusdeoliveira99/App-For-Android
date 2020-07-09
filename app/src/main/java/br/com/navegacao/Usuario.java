@@ -50,9 +50,7 @@ public class Usuario {
     }
 
 
-    public Usuario(){
-
-    }
+    public Usuario(){}
 
     public Usuario(long id, String usuario, String senha){
         this.id = id;

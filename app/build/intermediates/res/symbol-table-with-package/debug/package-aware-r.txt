@@ -1654,6 +1654,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id coordinatorLayout
 id criarUsuario
 id custom
 id customPanel
@@ -2102,6 +2103,7 @@ string chip_text
 string clear_text_end_icon_content_description
 string config
 string configApp
+string configSalvas
 string content
 string email
 string error_icon_content_description

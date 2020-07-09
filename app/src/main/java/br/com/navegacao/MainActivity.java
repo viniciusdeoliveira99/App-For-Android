@@ -31,25 +31,31 @@ public class MainActivity extends AppCompatActivity {
     protected Toolbar toolbar;
     protected DBHelper dbHelper;
     protected NavigationView navView;
-    protected Usuario usuarioHeader;
+    private long receivedPersonId;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences preferences = getSharedPreferences("userPreferences", MODE_PRIVATE);
-        final boolean marcado = preferences.getBoolean("marcadoCheck", false);
-
-
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navView = findViewById(R.id.nav_view);
-
-
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
         }
+
+        try {
+            //get intent to get person id
+            receivedPersonId = getIntent().getLongExtra("USER_ID", 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        SharedPreferences preferences = getSharedPreferences("userPreferences", MODE_PRIVATE);
+        final boolean marcado = preferences.getBoolean("marcadoCheck", false);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navView = findViewById(R.id.nav_view);
 
         //CHAMA MÉTODO DO DRAWER LAYOUT
         setupNavDrawer();
@@ -72,24 +78,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //NAV HEADER
-        dbHelper = new DBHelper(this);
-        List<Usuario> listarDadosUsuario = dbHelper.getDadosHeader();
-
-        for(int i = 0; i < listarDadosUsuario.size(); i++){
-
-            usuarioHeader = listarDadosUsuario.get(i);
-
-            View header = navView.getHeaderView(0);
-            TextView usuarioLogado = header.findViewById(R.id.usuarioLogado);
-            TextView usuarioEmail = header.findViewById(R.id.usuarioEmail);
-
-            usuarioLogado.setText(usuarioHeader.getUsuario());
-            usuarioEmail.setText(usuarioHeader.getEmail());
-        }
-
-
         if (drawerLayout != null) {
+
+
+            //NAV VIEW HEADER
+            dbHelper = new DBHelper(this);
+            Usuario queriedUsuario = dbHelper.obterUsuario(receivedPersonId);
+            
+            View headerView = navView.getHeaderView(0);
+            TextView usuarioLogado = headerView.findViewById(R.id.usuarioLogado);
+            TextView usuarioEmail = headerView.findViewById(R.id.usuarioEmail);
+
+            usuarioLogado.setText(queriedUsuario.getUsuario());
+            usuarioEmail.setText(queriedUsuario.getEmail());
+
             navView.setNavigationItemSelectedListener(
                     new NavigationView.OnNavigationItemSelectedListener() {
                         @Override
@@ -185,5 +187,4 @@ public class MainActivity extends AppCompatActivity {
     private void replaceFragment(Fragment frag){
         getSupportFragmentManager().beginTransaction().replace(R.id.fragLayout, frag).commit();
     }
-
 }

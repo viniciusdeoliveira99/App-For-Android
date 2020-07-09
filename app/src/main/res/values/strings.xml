@@ -38,5 +38,6 @@
     <string name="receberEmail">Receber alerta por e-mail</string>
     <string name="modoNoturno">Modo noturno</string>
     <string name="logado">Clique para manter usuário logado</string>
+    <string name="configSalvas">Configurações salvas</string>
 
 </resources>

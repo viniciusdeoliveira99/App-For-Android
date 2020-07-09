@@ -15,7 +15,7 @@ import br.com.navegacao.Usuario;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String TAG = "TESTE BANCO";
+    private static final String TAG = "BANCO";
     public static final String DATABASE_NAME = "acesso.db";
     private static final int DATABASE_VERSION = 1 ;
     public static final String TABLE_NAME = "acesso";
@@ -107,22 +107,22 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
+    //MÉTODO PARA OBTER O USUÁRIO
     public Usuario obterUsuario(long id){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT  * FROM " + TABLE_NAME + " WHERE _id="+ id;
         Cursor cursor = db.rawQuery(query, null);
 
         Usuario usuarioRecebido = new Usuario();
+
         if(cursor.getCount() > 0) {
             cursor.moveToFirst();
-
-            usuarioRecebido.setNome(cursor.getString(cursor.getColumnIndex(NOME)));
-            usuarioRecebido.setIdade(cursor.getString(cursor.getColumnIndex(IDADE)));
-            usuarioRecebido.setOcupacao(cursor.getString(cursor.getColumnIndex(OCUPACAO)));
+            usuarioRecebido.setUsuario(cursor.getString(cursor.getColumnIndex(COLUMN_USUARIO)));
+            usuarioRecebido.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_EMAIL)));
         }
-        
         cursor.close();
         db.close();
-        return receivedPerson;
+        
+        return usuarioRecebido;
     }
 }

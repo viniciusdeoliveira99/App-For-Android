@@ -29,9 +29,7 @@ public class Login extends AppCompatActivity {
     private EditText usuario;
     private EditText senha;
     private DBHelper dbHelper;
-    private Usuario usuarioLogin;
-
-    private long receivedUserId;
+    private Usuario usuarioLogin, usuariosListaInicial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +40,14 @@ public class Login extends AppCompatActivity {
         button = (Button) findViewById(R.id.login);
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
+
+        dbHelper = new DBHelper(this);
+        List<Usuario> iniciarLista = dbHelper.buscarDados();
+
+        for(int i = 0; i < iniciarLista.size(); i++){
+            usuariosListaInicial = iniciarLista.get(i);
+
+        }
 
 
         //PREFERÊNCIAS MODO NOTURNO
@@ -106,23 +112,22 @@ public class Login extends AppCompatActivity {
 
                 usuarioLogin = lista.get(i);
 
-                if (user.equals(usuarioLogin.getUsuario()) && pass.equals(usuarioLogin.getSenha())) {
-                    startActivity(new Intent(Login.this, MainActivity.class));
+                if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {
                     Log.d(TAG, "ID: " + usuarioLogin.getId());
+                    getUserData(usuarioLogin.getId());
+
+                }else{
+                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
+                    adb.setTitle("Atenção!");
+                    adb.setMessage("Dados incorretos!");
+                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    adb.show();
                 }
-//                else{
-//                    AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
-//                    adb.setTitle("ERRO");
-//                    adb.setMessage("Dados incorretos!");
-//                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            dialog.dismiss();
-//                        }
-//                    });
-//                    adb.show();
-//                    errorAlert();
-//                }
             }
 
         }else {
@@ -165,5 +170,12 @@ public class Login extends AppCompatActivity {
         usuario.setHintTextColor(Color.RED);
         senha.setHintTextColor(Color.RED);
         usuario.requestFocus();
+    }
+
+    //MÉTODO PARA OBTER DADOS DO USUÁRIO
+    private void getUserData(long usuarioId){
+        Intent goToMain = new Intent(this, MainActivity.class);
+        goToMain.putExtra("USER_ID", usuarioId);
+        this.startActivity(goToMain);
     }
 }

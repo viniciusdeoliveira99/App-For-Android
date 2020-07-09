@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -19,12 +20,13 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class ConfigFragment extends BaseFragment{
 
-    private Switch aSwitch;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
+
+        Switch aSwitch;
 
         View view = inflater.inflate(R.layout.fragment_config, container, false);
         aSwitch = (Switch)view.findViewById(R.id.aswitch);
@@ -56,14 +58,21 @@ public class ConfigFragment extends BaseFragment{
 
                     editor.putBoolean("isDarkModeOn", false);
                     editor.apply();
+                    toast("Configurações salvas");
+
                 }else {
                     AppCompatDelegate.setDefaultNightMode(
                             AppCompatDelegate.MODE_NIGHT_YES);
                     editor.putBoolean("isDarkModeOn", true);
                     editor.apply();
+                    toast("Configurações salvas");
                 }
             }
         });
         return view;
+    }
+
+    public void toast(String msg){
+        Toast.makeText(getContext(), msg, Toast.LENGTH_SHORT).show();
     }
 }
