@@ -29,7 +29,8 @@ public class Login extends AppCompatActivity {
     private EditText usuario;
     private EditText senha;
     private DBHelper dbHelper;
-    private Usuario usuarioLogin, usuariosListaInicial;
+    private Usuario usuarioLogin;
+    private List<Usuario> usuarioList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +42,10 @@ public class Login extends AppCompatActivity {
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
 
+
         dbHelper = new DBHelper(this);
-        List<Usuario> iniciarLista = dbHelper.buscarDados();
 
-        for(int i = 0; i < iniciarLista.size(); i++){
-            usuariosListaInicial = iniciarLista.get(i);
-
-        }
+        usuarioList = dbHelper.buscarDados();
 
 
         //PREFERÊNCIAS MODO NOTURNO
@@ -102,15 +100,11 @@ public class Login extends AppCompatActivity {
         String user = usuario.getText().toString();
         String pass = senha.getText().toString();
 
-        dbHelper = new DBHelper(this);
-
         if (!user.isEmpty() && !pass.isEmpty() && pass.length() >= 4) {
 
-            List<Usuario> lista = dbHelper.buscarDados();
+            for (int i = 0; i < usuarioList.size(); i++) {
 
-            for (int i = 0; i < lista.size(); i++) {
-
-                usuarioLogin = lista.get(i);
+                usuarioLogin = usuarioList.get(i);
 
                 if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {
                     Log.d(TAG, "ID: " + usuarioLogin.getId());
