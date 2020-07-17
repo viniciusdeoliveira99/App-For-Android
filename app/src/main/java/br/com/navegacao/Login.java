@@ -42,9 +42,8 @@ public class Login extends AppCompatActivity {
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
 
-
+        //CRIANDO TABELA DE DADOS ACESSO
         dbHelper = new DBHelper(this);
-
         usuarioList = dbHelper.buscarDados();
 
 
@@ -68,6 +67,11 @@ public class Login extends AppCompatActivity {
 
         if(preferences.contains("checked") && preferences.getBoolean("checked",false)) {
             checkBox.setChecked(true);
+            for (int i = 0; i < usuarioList.size(); i++) {
+                usuarioLogin = usuarioList.get(i);
+                getUserData(usuarioLogin.getId());
+            }
+            
         }else {
             checkBox.setChecked(false);
         }

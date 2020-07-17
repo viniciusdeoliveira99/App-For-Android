@@ -79,8 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (drawerLayout != null) {
-
-
+            
             //NAV VIEW HEADER
             dbHelper = new DBHelper(this);
             Usuario queriedUsuario = dbHelper.obterUsuario(receivedPersonId);
