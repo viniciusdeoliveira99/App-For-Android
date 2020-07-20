@@ -67,11 +67,6 @@ public class Login extends AppCompatActivity {
 
         if(preferences.contains("checked") && preferences.getBoolean("checked",false)) {
             checkBox.setChecked(true);
-            for (int i = 0; i < usuarioList.size(); i++) {
-                usuarioLogin = usuarioList.get(i);
-                getUserData(usuarioLogin.getId());
-            }
-            
         }else {
             checkBox.setChecked(false);
         }
@@ -107,13 +102,10 @@ public class Login extends AppCompatActivity {
         if (!user.isEmpty() && !pass.isEmpty() && pass.length() >= 4) {
 
             for (int i = 0; i < usuarioList.size(); i++) {
-
                 usuarioLogin = usuarioList.get(i);
-
                 if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {
                     Log.d(TAG, "ID: " + usuarioLogin.getId());
                     getUserData(usuarioLogin.getId());
-
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
                     adb.setTitle("Atenção!");
