@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.LinkedList;
 import java.util.List;
 
-import br.com.navegacao.PessoaAcesso;
+import br.com.navegacao.activity.PessoaAcesso;
 
 public class PersonDBHelper extends SQLiteOpenHelper {
 

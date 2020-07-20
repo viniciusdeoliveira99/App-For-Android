@@ -1,4 +1,4 @@
-package br.com.navegacao;
+package br.com.navegacao.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import br.com.navegacao.R;
 import br.com.navegacao.domain.PersonDBHelper;
 
 

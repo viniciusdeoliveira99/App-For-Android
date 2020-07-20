@@ -1,5 +1,6 @@
-package br.com.navegacao;
+package br.com.navegacao.activity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,6 +21,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import java.util.List;
 
+import br.com.navegacao.R;
 import br.com.navegacao.domain.DBHelper;
 
 public class Login extends AppCompatActivity {
@@ -32,15 +34,22 @@ public class Login extends AppCompatActivity {
     private Usuario usuarioLogin;
     private List<Usuario> usuarioList;
 
+    UserSession session;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //CRIANDO SESSÃO DO USUARIO
+        session = new UserSession(getApplicationContext());
+
         button = (Button) findViewById(R.id.login);
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
+
 
         //CRIANDO TABELA DE DADOS ACESSO
         dbHelper = new DBHelper(this);
@@ -48,9 +57,9 @@ public class Login extends AppCompatActivity {
 
 
         //PREFERÊNCIAS MODO NOTURNO
-        SharedPreferences sharedPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
-        final boolean isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn", false);
-        final boolean isChecked = sharedPreferences.getBoolean("isChecked", false);
+        SharedPreferences shPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
+        final boolean isDarkModeOn = shPreferences.getBoolean("isDarkModeOn", false);
+        final boolean isChecked = shPreferences.getBoolean("isChecked", false);
 
         if (isDarkModeOn || isChecked) {
             AppCompatDelegate.setDefaultNightMode(
@@ -60,13 +69,15 @@ public class Login extends AppCompatActivity {
                     AppCompatDelegate.MODE_NIGHT_NO);
         }
 
+
         //CHECKBOX PARA MANTER USUÁRIO LOGADO
         final CheckBox checkBox = (CheckBox)findViewById(R.id.checkBox);
         SharedPreferences preferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
         final SharedPreferences.Editor ed = preferences.edit();
 
-        if(preferences.contains("checked") && preferences.getBoolean("checked",false)) {
+        if(preferences.contains("checked") && preferences.getBoolean("checked",false) && preferences.contains("Name") && preferences.contains("txtPassword")) {
             checkBox.setChecked(true);
+            
         }else {
             checkBox.setChecked(false);
         }
@@ -83,6 +94,8 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+
+
 
         //BOTÃO LOGAR
         button.setOnClickListener(new View.OnClickListener() {
@@ -102,10 +115,13 @@ public class Login extends AppCompatActivity {
         if (!user.isEmpty() && !pass.isEmpty() && pass.length() >= 4) {
 
             for (int i = 0; i < usuarioList.size(); i++) {
+
                 usuarioLogin = usuarioList.get(i);
+
                 if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {
                     Log.d(TAG, "ID: " + usuarioLogin.getId());
                     getUserData(usuarioLogin.getId());
+
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
                     adb.setTitle("Atenção!");

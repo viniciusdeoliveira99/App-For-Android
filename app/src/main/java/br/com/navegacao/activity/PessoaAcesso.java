@@ -1,4 +1,4 @@
-package br.com.navegacao;
+package br.com.navegacao.activity;
 
 public class PessoaAcesso {
 

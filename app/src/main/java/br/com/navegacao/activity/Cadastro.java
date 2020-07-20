@@ -1,7 +1,8 @@
-package br.com.navegacao;
+package br.com.navegacao.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import br.com.navegacao.R;
 import br.com.navegacao.domain.DBHelper;
 
 public class Cadastro extends AppCompatActivity {
@@ -23,6 +25,10 @@ public class Cadastro extends AppCompatActivity {
     private DBHelper dbHelper;
     private EditText telefone;
     private EditText email;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+    UserSession session;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +41,11 @@ public class Cadastro extends AppCompatActivity {
         email = (EditText)findViewById(R.id.email);
         cadastrar = (Button)findViewById(R.id.botaoCadastrarUsuario);
         cancelar = (Button)findViewById(R.id.botaoCancelarCadastro);
+
+        sharedPreferences = getApplicationContext().getSharedPreferences("Reg", 0);
+        // get editor to edit in file
+        editor = sharedPreferences.edit();
+
 
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +65,7 @@ public class Cadastro extends AppCompatActivity {
     }
 
     public void salvarCadastro(){
+
         String user = usuario.getText().toString();
         String pass = senha.getText().toString();
         String phone = telefone.getText().toString();
@@ -67,10 +79,16 @@ public class Cadastro extends AppCompatActivity {
         usuarioLogin.setTelefone(telefone.getText().toString());
         usuarioLogin.setEmail(email.getText().toString());
 
+
         if(!user.isEmpty() && !pass.isEmpty() && !phone.isEmpty() && !mail.isEmpty() && pass.length() >= 4) {
             dbHelper.create(usuarioLogin);
+            editor.putString("Name", user);
+            editor.putString("txtPassword", pass);
+            editor.apply();
+
             goBackMain();
             toast("Usuário: (" + usuarioLogin.getUsuario() + ") cadastrado(a)");
+            
         }else{
             AlertDialog.Builder adb = new AlertDialog.Builder(Cadastro.this, R.style.MyDialogTheme);
             adb.setTitle("Atenção");

@@ -11,7 +11,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.navegacao.Usuario;
+import br.com.navegacao.activity.Usuario;
 
 public class DBHelper extends SQLiteOpenHelper {
 

@@ -14,8 +14,8 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-import br.com.navegacao.AtualizarUsuario;
-import br.com.navegacao.PessoaAcesso;
+import br.com.navegacao.activity.AtualizarUsuario;
+import br.com.navegacao.activity.PessoaAcesso;
 import br.com.navegacao.R;
 import br.com.navegacao.domain.PersonDBHelper;
 

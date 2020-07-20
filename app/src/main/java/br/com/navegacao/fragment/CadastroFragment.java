@@ -21,7 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import br.com.navegacao.AddUsuario;
+import br.com.navegacao.activity.AddUsuario;
 import br.com.navegacao.R;
 import br.com.navegacao.adapter.PessoaAdapter;
 import br.com.navegacao.domain.PersonDBHelper;

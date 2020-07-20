@@ -1,4 +1,4 @@
-package br.com.navegacao;
+package br.com.navegacao.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -19,8 +19,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.util.List;
-
+import br.com.navegacao.R;
 import br.com.navegacao.domain.DBHelper;
 import br.com.navegacao.fragment.CadastroFragment;
 import br.com.navegacao.fragment.ConfigFragment;
@@ -51,14 +50,15 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        SharedPreferences preferences = getSharedPreferences("userPreferences", MODE_PRIVATE);
-        final boolean marcado = preferences.getBoolean("marcadoCheck", false);
+//        SharedPreferences preferences = getSharedPreferences("userPreferences", MODE_PRIVATE);
+//        final boolean marcado = preferences.getBoolean("marcadoCheck", false);
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navView = findViewById(R.id.nav_view);
 
         //CHAMA MÉTODO DO DRAWER LAYOUT
         setupNavDrawer();
+
 
         //ADD O FRAGMENT NA TELA
         if (savedInstanceState == null) {
@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().add(R.id.fragLayout, frag).commit();
         }
     }
+
 
     protected void setupNavDrawer() {
         toolbar.setNavigationIcon(R.drawable.ic_menu_actual);
@@ -157,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this, R.style.MyDialogTheme);
             adb.setTitle("Sobre");
             adb.setMessage("Sistema versão 1.0");
-            adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
