@@ -118,9 +118,10 @@ public class Login extends AppCompatActivity {
 
                 usuarioLogin = usuarioList.get(i);
 
-                if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {
-                    Log.d(TAG, "ID: " + usuarioLogin.getId());
+                if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {                   
                     getUserData(usuarioLogin.getId());
+					
+					
 
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
