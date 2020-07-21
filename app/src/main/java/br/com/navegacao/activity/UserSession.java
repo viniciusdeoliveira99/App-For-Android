@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 
 import java.util.HashMap;
 
+import static android.content.Context.MODE_PRIVATE;
+
 
 public class UserSession {
     // Shared Preferences reference
@@ -16,45 +18,34 @@ public class UserSession {
     
     // Context
     Context _context;
-    
-    // Shared preferences mode
-    int PRIVATE_MODE = 0;
-    
-    // Shared preferences file name
-    public static final String PREFER_NAME = "Reg";
-    
+
     // All Shared Preferences Keys
     public static final String IS_USER_LOGIN = "IsUserLoggedIn";
+    public static final String KEY_NAME = "Nome";
+    public static final String KEY_PASSWORD = "Senha";
     
-    // User name (make variable public to access from outside)
-    public static final String KEY_NAME = "Name";
-    
-    // Email address (make variable public to access from outside)
-    public static final String KEY_EMAIL = "Email";
-    
-    // password
-    public static final String KEY_PASSWORD = "txtPassword";
-    
-    
+
     // Constructor
     public UserSession(Context context){
         this._context = context;
-        pref = _context.getSharedPreferences(PREFER_NAME, PRIVATE_MODE);
+        pref = _context.getSharedPreferences("sharedPrefs", MODE_PRIVATE);
         editor = pref.edit();
     }
     
+
     //Create login session
-    public void createUserLoginSession(String uName, String uPassword){
+    public void createUserLoginSession(String usuario, String senhaUsuario){
         // Storing login value as TRUE
         editor.putBoolean(IS_USER_LOGIN, true);
         // Storing name in preferences
-        editor.putString(KEY_NAME, uName);
+        editor.putString(KEY_NAME, usuario);
         // Storing email in preferences
-        editor.putString(KEY_PASSWORD,  uPassword);
+        editor.putString(KEY_PASSWORD,  senhaUsuario);
         // commit changes
         editor.commit();
     }
     
+
     /**
      * Check login method will check user login status
      * If false it will redirect user to login page
@@ -63,7 +54,6 @@ public class UserSession {
     public boolean checkLogin(){
         // Check login status
         if(!this.isUserLoggedIn()){
-   
             // user is not logged in redirect him to Login Activity
             Intent i = new Intent(_context, Login.class);    
             // Closing all the Activities from stack
@@ -100,7 +90,7 @@ public class UserSession {
         editor.clear();
         editor.commit();
     
-        // After logout redirect user to MainActivity
+        // After logout redirect
         Intent i = new Intent(_context, Login.class);
         // Closing all the Activities
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -100,18 +100,18 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\DN
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:11:9-40
-activity#br.com.navegacao.MainActivity
+activity#br.com.navegacao.activity.MainActivity
 ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:14:9-18:20
 	android:label
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:16:13-45
 	android:theme
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:17:13-56
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:15:13-41
-activity#br.com.navegacao.Login
+		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:15:13-50
+activity#br.com.navegacao.activity.Login
 ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:9-26:20
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:19-40
+		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:22:13-25:29
 action#android.intent.action.MAIN
@@ -122,18 +122,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
 		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:24:27-74
-activity#br.com.navegacao.Cadastro
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:9-46
+activity#br.com.navegacao.activity.Cadastro
+ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:9-55
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:19-43
-activity#br.com.navegacao.AddUsuario
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:9-48
+		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:19-52
+activity#br.com.navegacao.activity.AddUsuario
+ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:9-57
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:19-45
-activity#br.com.navegacao.AtualizarUsuario
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:9-54
+		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:19-54
+activity#br.com.navegacao.activity.AtualizarUsuario
+ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:9-63
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:19-51
+		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:19-60
 uses-sdk
 INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml

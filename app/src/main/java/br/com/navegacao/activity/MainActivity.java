@@ -32,11 +32,14 @@ public class MainActivity extends AppCompatActivity {
     protected NavigationView navView;
     private long receivedPersonId;
 
+    UserSession session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        session = new UserSession(this);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
@@ -131,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         startActivity(new Intent(MainActivity.this, Login.class));
                         finish();
+                        session.logoutUser();
                     }
                 });
                 adb.setNegativeButton("Não", new DialogInterface.OnClickListener() {

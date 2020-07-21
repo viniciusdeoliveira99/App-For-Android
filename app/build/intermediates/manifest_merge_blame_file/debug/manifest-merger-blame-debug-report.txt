@@ -28,8 +28,8 @@
 19-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:11:9-40
 20        <activity
 20-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:14:9-18:20
-21            android:name="br.com.navegacao.MainActivity"
-21-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:15:13-41
+21            android:name="br.com.navegacao.activity.MainActivity"
+21-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:15:13-50
 22            android:label="@string/app_name"
 22-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:16:13-45
 23            android:theme="@style/AppTheme.NoActionBar" >
@@ -37,9 +37,9 @@
 24        </activity>
 25
 26        <!-- LOGIN MAIN -->
-27        <activity android:name="br.com.navegacao.Login" >
+27        <activity android:name="br.com.navegacao.activity.Login" >
 27-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:9-26:20
-27-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:19-40
+27-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:19-49
 28            <intent-filter>
 28-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:22:13-25:29
 29                <action android:name="android.intent.action.MAIN" />
@@ -51,15 +51,15 @@
 31-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:24:27-74
 32            </intent-filter>
 33        </activity>
-34        <activity android:name="br.com.navegacao.Cadastro" />
-34-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:9-46
-34-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:19-43
-35        <activity android:name="br.com.navegacao.AddUsuario" />
-35-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:9-48
-35-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:19-45
-36        <activity android:name="br.com.navegacao.AtualizarUsuario" />
-36-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:9-54
-36-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:19-51
+34        <activity android:name="br.com.navegacao.activity.Cadastro" />
+34-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:9-55
+34-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:19-52
+35        <activity android:name="br.com.navegacao.activity.AddUsuario" />
+35-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:9-57
+35-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:19-54
+36        <activity android:name="br.com.navegacao.activity.AtualizarUsuario" />
+36-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:9-63
+36-->C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:19-60
 37
 38        <provider
 38-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43

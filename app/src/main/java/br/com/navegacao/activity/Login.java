@@ -1,12 +1,10 @@
 package br.com.navegacao.activity;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -43,9 +41,6 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //CRIANDO SESSÃO DO USUARIO
-        session = new UserSession(getApplicationContext());
-
         button = (Button) findViewById(R.id.login);
         usuario = (EditText) findViewById(R.id.user);
         senha = (EditText) findViewById(R.id.pass);
@@ -75,9 +70,17 @@ public class Login extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
         final SharedPreferences.Editor ed = preferences.edit();
 
-        if(preferences.contains("checked") && preferences.getBoolean("checked",false) && preferences.contains("Name") && preferences.contains("txtPassword")) {
+        if(preferences.contains("checked") && preferences.getBoolean("checked",false)
+                && preferences.contains("Nome") && preferences.contains("Senha")) {
+
             checkBox.setChecked(true);
-            
+
+            Intent i = new  Intent(getApplicationContext(), MainActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            // Add new Flag to start new Activity
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
+
         }else {
             checkBox.setChecked(false);
         }
@@ -94,7 +97,6 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
-
 
 
         //BOTÃO LOGAR
@@ -118,10 +120,20 @@ public class Login extends AppCompatActivity {
 
                 usuarioLogin = usuarioList.get(i);
 
-                if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {                   
+                if (user.equalsIgnoreCase(usuarioLogin.getUsuario()) && pass.equalsIgnoreCase(usuarioLogin.getSenha())) {
+
                     getUserData(usuarioLogin.getId());
-					
-					
+
+                    String uNome;
+                    String uSenha;
+
+                    uNome = usuarioLogin.getUsuario();
+                    uSenha = usuarioLogin.getSenha();
+
+                    //CRIANDO SESSÃO DO USUARIO
+                    session = new UserSession(getApplicationContext());
+                    session.createUserLoginSession(uNome, uSenha);
+
 
                 }else{
                     AlertDialog.Builder adb = new AlertDialog.Builder(Login.this, R.style.MyDialogTheme);
