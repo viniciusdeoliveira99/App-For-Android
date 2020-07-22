@@ -12,12 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp" >
+
         <ImageView
+            android:id="@+id/imagemUsuario"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:contentDescription="@string/content"
             android:layout_gravity="center"
             android:src="@drawable/image"/>
+
     </FrameLayout>
 
 
@@ -71,14 +74,15 @@
             android:background="@color/checkbox"
             android:text="@string/logado" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/forget"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="70dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:textColor="@color/colorAccent"-->
-<!--            android:text="@string/forget"/>-->
+        <TextView
+            android:id="@+id/forget"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:textColor="@color/forgetPass"
+            android:text="@string/forget"/>
 
     </FrameLayout>
 </LinearLayout>

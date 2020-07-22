@@ -21,5 +21,7 @@
     <color name="checkbox">#0d0d0d</color>
     <color name="iconColor">#ccd8ff</color>
     <color name="colorChecked">#1a1a1a</color>
+    <color name="viewGrid">#80ccff</color>
+    <color name="forgetPass">#80ccff</color>
 
 </resources>

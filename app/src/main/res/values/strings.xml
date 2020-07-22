@@ -28,15 +28,15 @@
     <string name="filter">Organizar</string>
     <string name="content">User Image</string>
     <string name="login">Login</string>
-    <string name="forget">Esqueceu a senha? Clique aqui para recuperar</string>
+    <string name="forget">Esqueceu a senha?</string>
     <string name="inserir">Cadastrar usuário</string>
     <string name="cadastroUsuario">Criar usuário</string>
     <string name="exit">Encerrar sessão</string>
 
     <!-- PREFERENCES -->
     <string name="configApp">Configurações do App</string>
-    <string name="receberEmail">Receber alerta por e-mail</string>
-    <string name="modoNoturno">Modo noturno</string>
+    <string name="receberNotificacao">Receber notificações</string>
+    <string name="modoNoturno">Alterar para tema escuro</string>
     <string name="logado">Clique para manter usuário logado</string>
     <string name="configSalvas">Configurações salvas</string>
 

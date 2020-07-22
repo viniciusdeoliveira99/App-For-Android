@@ -1038,6 +1038,7 @@ color test_mtrl_calendar_day_selected
 color textColor
 color tooltip_background_dark
 color tooltip_background_light
+color viewGrid
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1618,6 +1619,7 @@ id alertTitle
 id all
 id always
 id aswitch
+id aswitchNotificacao
 id async
 id atualizaIdade
 id atualizaNome
@@ -2175,6 +2177,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string receberEmail
+string receberNotificacao
 string search_menu_title
 string senha
 string status_bar_notification_info_overflow
