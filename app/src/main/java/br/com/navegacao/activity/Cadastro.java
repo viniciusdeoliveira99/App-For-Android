@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -24,6 +25,7 @@ public class Cadastro extends AppCompatActivity {
     private DBHelper dbHelper;
     private EditText telefone;
     private EditText email;
+    private ImageView imageView;
 
 
     @Override
@@ -31,6 +33,7 @@ public class Cadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cadastro);
 
+        imageView = (ImageView)findViewById(R.id.profilePic);
         usuario = (EditText)findViewById(R.id.usuario);
         senha = (EditText)findViewById(R.id.senha);
         telefone = (EditText)findViewById(R.id.telefone);

@@ -929,6 +929,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color forgetPass
 color geral
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -1466,6 +1467,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_usuario
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1695,6 +1697,7 @@ id filter_chip
 id fitToContents
 id fixed
 id forever
+id forget
 id fragLayout
 id fragment_container_view_tag
 id ghost_view
@@ -1712,6 +1715,7 @@ id idade
 id ifRoom
 id image
 id imageView
+id imagemUsuario
 id info
 id invisible
 id italic
@@ -1785,6 +1789,7 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id profilePic
 id progress_circular
 id progress_horizontal
 id radio
