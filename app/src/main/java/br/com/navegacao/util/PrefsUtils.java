@@ -10,10 +10,4 @@ public class PrefsUtils {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         return sp.getBoolean("PREF_CHECK_PUSH", false);
     }
-
-    public static void adicionaDarkMode(SharedPreferences preferences) {
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putBoolean("DARK_MODE_ON", true);
-        editor.apply();
-    }
 }
