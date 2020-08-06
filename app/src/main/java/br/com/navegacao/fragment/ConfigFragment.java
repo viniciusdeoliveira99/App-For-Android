@@ -39,7 +39,6 @@ public class ConfigFragment extends BaseFragment{
         final boolean isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn", false);
         final boolean isChecked = sharedPreferences.getBoolean("isChecked", false);
 
-
         if (isDarkModeOn || isChecked) {
             AppCompatDelegate.setDefaultNightMode(
                     AppCompatDelegate.MODE_NIGHT_YES);

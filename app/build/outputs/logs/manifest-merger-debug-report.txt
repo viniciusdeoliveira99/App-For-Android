@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [androidx.navigation:navigation-ui:2.2.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d6eb164f6a078946cbbb726b40cb4870\navigation-ui-2.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [br.com.livroandroid:android-utils:5.0.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\096db4e6567904d5998e0afb20b8f39f\jetified-android-utils-5.0.1\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.preference:preference:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\ad83ac99f9e863d2882a92653b32cec1\preference-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -15,6 +16,11 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\DNAXIS\.gradle\caches\tr
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.asha.nightowllib:nightowllib:0.2] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\70ddd19880cbaa5754fedd49e30c3d67\jetified-play-services-location-10.2.6\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\1aa2c679a47d03b3134a1d40f731740f\jetified-play-services-tasks-10.2.6\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:16:1-23:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\c63ceca946e9bc27525371878741042e\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -51,27 +57,57 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DNAXIS\.gradle\c
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:4:5-31
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:4:5-31
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:1-32:12
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:14:22-78
 application
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:6:5-31:19
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:18:5-44:19
+MERGED from [br.com.livroandroid:android-utils:5.0.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\096db4e6567904d5998e0afb20b8f39f\jetified-android-utils-5.0.1\AndroidManifest.xml:9:5-12:44
+MERGED from [br.com.livroandroid:android-utils:5.0.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\096db4e6567904d5998e0afb20b8f39f\jetified-android-utils-5.0.1\AndroidManifest.xml:9:5-12:44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -80,6 +116,16 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\DNAXIS\.gra
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [com.asha.nightowllib:nightowllib:0.2] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\AndroidManifest.xml:11:5-15:19
 MERGED from [com.asha.nightowllib:nightowllib:0.2] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\70ddd19880cbaa5754fedd49e30c3d67\jetified-play-services-location-10.2.6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\70ddd19880cbaa5754fedd49e30c3d67\jetified-play-services-location-10.2.6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\1aa2c679a47d03b3134a1d40f731740f\jetified-play-services-tasks-10.2.6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\1aa2c679a47d03b3134a1d40f731740f\jetified-play-services-tasks-10.2.6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:19:5-21:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
@@ -89,57 +135,62 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\DN
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:21:9-41
 	tools:ignore
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:12:9-48
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:24:9-48
 	android:icon
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:8:9-50
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:20:9-50
+		REJECTED from [br.com.livroandroid:android-utils:5.0.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\096db4e6567904d5998e0afb20b8f39f\jetified-android-utils-5.0.1\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:19:9-35
 	android:theme
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:23:9-40
+	tools:replace
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:25:9-37
 activity#br.com.navegacao.activity.MainActivity
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:14:9-18:20
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:27:9-31:20
 	android:label
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:16:13-45
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:29:13-45
 	android:theme
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:17:13-56
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:15:13-50
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:28:13-50
 activity#br.com.navegacao.activity.Login
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:9-26:20
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:34:9-39:20
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:21:19-49
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:34:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:22:13-25:29
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:35:13-38:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:37:27-74
 activity#br.com.navegacao.activity.Cadastro
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:9-55
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:41:9-55
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:28:19-52
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:41:19-52
 activity#br.com.navegacao.activity.AddUsuario
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:9-57
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:42:9-57
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:29:19-54
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:42:19-54
 activity#br.com.navegacao.activity.AtualizarUsuario
-ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:9-63
+ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:43:9-63
 	android:name
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml:30:19-60
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml:43:19-60
 uses-sdk
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
 MERGED from [androidx.navigation:navigation-ui:2.2.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d6eb164f6a078946cbbb726b40cb4870\navigation-ui-2.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.2.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d6eb164f6a078946cbbb726b40cb4870\navigation-ui-2.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [br.com.livroandroid:android-utils:5.0.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\096db4e6567904d5998e0afb20b8f39f\jetified-android-utils-5.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [br.com.livroandroid:android-utils:5.0.1] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\096db4e6567904d5998e0afb20b8f39f\jetified-android-utils-5.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\b8286ed28b50483d1bfadc3ffa43e8ca\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.preference:preference:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\ad83ac99f9e863d2882a92653b32cec1\preference-1.0.0\AndroidManifest.xml:20:5-44
@@ -160,6 +211,16 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\DNAXIS\.gradle\c
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.asha.nightowllib:nightowllib:0.2] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.asha.nightowllib:nightowllib:0.2] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\2ddb7ca3e64d4ea7e4a2be1777c63be7\nightowllib-0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\70ddd19880cbaa5754fedd49e30c3d67\jetified-play-services-location-10.2.6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\70ddd19880cbaa5754fedd49e30c3d67\jetified-play-services-location-10.2.6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\1aa2c679a47d03b3134a1d40f731740f\jetified-play-services-tasks-10.2.6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\1aa2c679a47d03b3134a1d40f731740f\jetified-play-services-tasks-10.2.6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:17:5-43
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\c63ceca946e9bc27525371878741042e\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -232,16 +293,36 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\DNAXIS\.gradle\caches\transfor
 MERGED from [androidx.print:print:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\DNAXIS\Documents\Android\Projeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DNAXIS\Documents\1 - Android\Projeto\app\src\main\AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\0e311301731f611af8f05c2e1ffac683\jetified-play-services-maps-10.2.6\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\f7858047ca45eaaf95ad2dcd0763cd8f\jetified-play-services-base-10.2.6\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\fba3d9a03ddfee17b14b83391c760a5e\jetified-play-services-basement-10.2.6\AndroidManifest.xml:20:20-65
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DNAXIS\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
 	android:authorities

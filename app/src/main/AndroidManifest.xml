@@ -3,13 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="br.com.navegacao">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- GPS por hardware -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Obter a localização por Wi-Fi ou triangulação de antenas -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Mapas V2 depende da OpenGL ES V2 -->
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher_user"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
 
         <activity
             android:name=".activity.MainActivity"

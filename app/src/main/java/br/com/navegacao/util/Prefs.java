@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 /**
  * Encapsula o acesso ao SharedPreferences
  */
+
 public class Prefs {
     public static final String PREF_ID = "navegacao";
 

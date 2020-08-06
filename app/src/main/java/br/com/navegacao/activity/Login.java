@@ -1,5 +1,6 @@
 package br.com.navegacao.activity;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -21,6 +22,7 @@ import java.util.List;
 
 import br.com.navegacao.R;
 import br.com.navegacao.domain.DBHelper;
+import livroandroid.lib.utils.PermissionUtils;
 
 public class Login extends AppCompatActivity {
 
@@ -34,12 +36,23 @@ public class Login extends AppCompatActivity {
 
     UserSession session;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        // Lista de permissões necessárias.
+        String permissions[] = new String[]{
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.CAMERA,
+        };
+
+        // Valida lista de permissões.
+        boolean ok = PermissionUtils.validate(this, 0, permissions);
+
 
         button = (Button) findViewById(R.id.login);
         usuario = (EditText) findViewById(R.id.user);

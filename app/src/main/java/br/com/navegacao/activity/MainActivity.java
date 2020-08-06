@@ -2,7 +2,6 @@ package br.com.navegacao.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -55,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
 //        SharedPreferences preferences = getSharedPreferences("userPreferences", MODE_PRIVATE);
 //        final boolean marcado = preferences.getBoolean("marcadoCheck", false);
-
         drawerLayout = findViewById(R.id.drawer_layout);
         navView = findViewById(R.id.nav_view);
 

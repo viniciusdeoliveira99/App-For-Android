@@ -1,29 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\DNAXIS\\Documents\\1 - Android\\Projeto\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\DNAXIS\\Documents\\1 - Android\\Projeto\\app\\src\\main\\res\\values-night\\dimens.xml",
                     "from": {
-                        "startLines": "3,20,10,22,15",
+                        "startLines": "2,3,6,5,4",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "57,762,384,856,540",
-                        "endLines": "8,20,13,22,18",
-                        "endColumns": "12,90,12,80,12",
-                        "endOffsets": "376,848,532,932,754"
+                        "startOffsets": "90,149,316,265,206",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "143,200,353,310,259"
                     },
                     "to": {
-                        "startLines": "61,67,68,72,73",
+                        "startLines": "21,22,23,24,25",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "3185,3504,3594,3744,3824",
-                        "endLines": "66,67,71,72,76",
-                        "endColumns": "12,89,12,79,12",
-                        "endOffsets": "3499,3589,3739,3819,4035"
+                        "startOffsets": "933,991,1047,1089,1139",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "986,1042,1084,1134,1192"
                     }
                 },
                 {
-                    "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "source": "C:\\Users\\DNAXIS\\Documents\\1 - Android\\Projeto\\app\\src\\main\\res\\values-night\\colors.xml",
                     "from": {
                         "startLines": "15,20,4,11,22,5,9,6,12,10,2,3,19,24,18,17,21,16,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -37,23 +35,6 @@
                         "startOffsets": "55,102,145,191,237,284,337,379,426,479,528,575,626,673,718,758,802,846,890",
                         "endColumns": "46,42,45,45,46,52,41,46,52,48,46,50,46,44,39,43,43,43,42",
                         "endOffsets": "97,140,186,232,279,332,374,421,474,523,570,621,668,713,753,797,841,885,928"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\values-night\\drawables.xml",
-                    "from": {
-                        "startLines": "1,2,4,6,5,3",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "76,165,351,527,440,256",
-                        "endColumns": "87,89,87,83,85,93",
-                        "endOffsets": "159,250,434,606,521,345"
-                    },
-                    "to": {
-                        "startLines": "26,27,28,29,30,31",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "1197,1285,1375,1463,1547,1633",
-                        "endColumns": "87,89,87,83,85,93",
-                        "endOffsets": "1280,1370,1458,1542,1628,1722"
                     }
                 },
                 {
@@ -74,6 +55,40 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\DNAXIS\\Documents\\1 - Android\\Projeto\\app\\src\\main\\res\\values-night\\strings.xml",
+                    "from": {
+                        "startLines": "7,1,24,22,23,36,28,21,32,27,30,16,31,29,11,12,10,6,5,4,3,2,15,35,17,37,19,20,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "401,17,1050,954,1003,1496,1174,912,1370,1128,1261,691,1315,1222,528,583,484,338,271,217,140,65,652,1441,732,1553,824,865,779",
+                        "endColumns": "46,46,47,47,45,55,46,40,41,44,52,39,53,37,53,42,42,61,65,52,75,73,37,53,45,66,39,45,43",
+                        "endOffsets": "443,59,1093,997,1044,1547,1216,948,1407,1168,1309,726,1364,1255,577,621,522,395,332,265,211,134,685,1490,773,1615,859,906,818"
+                    },
+                    "to": {
+                        "startLines": "32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1727,1774,1821,1869,1917,1963,2019,2066,2107,2149,2194,2247,2287,2341,2379,2433,2476,2519,2581,2647,2700,2776,2850,2888,2942,2988,3055,3095,3141",
+                        "endColumns": "46,46,47,47,45,55,46,40,41,44,52,39,53,37,53,42,42,61,65,52,75,73,37,53,45,66,39,45,43",
+                        "endOffsets": "1769,1816,1864,1912,1958,2014,2061,2102,2144,2189,2242,2282,2336,2374,2428,2471,2514,2576,2642,2695,2771,2845,2883,2937,2983,3050,3090,3136,3180"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\DNAXIS\\Documents\\1 - Android\\Projeto\\app\\src\\main\\res\\values-night\\drawables.xml",
+                    "from": {
+                        "startLines": "1,2,4,6,5,3",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "76,165,351,527,440,256",
+                        "endColumns": "87,89,87,83,85,93",
+                        "endOffsets": "159,250,434,606,521,345"
+                    },
+                    "to": {
+                        "startLines": "26,27,28,29,30,31",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "1197,1285,1375,1463,1547,1633",
+                        "endColumns": "87,89,87,83,85,93",
+                        "endOffsets": "1280,1370,1458,1542,1628,1722"
+                    }
+                },
+                {
                     "source": "C:\\Users\\DNAXIS\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -91,37 +106,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\values-night\\dimens.xml",
+                    "source": "C:\\Users\\DNAXIS\\Documents\\1 - Android\\Projeto\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
-                        "startLines": "2,3,6,5,4",
+                        "startLines": "3,20,10,22,15",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "90,149,316,265,206",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "143,200,353,310,259"
+                        "startOffsets": "57,762,384,856,540",
+                        "endLines": "8,20,13,22,18",
+                        "endColumns": "12,90,12,80,12",
+                        "endOffsets": "376,848,532,932,754"
                     },
                     "to": {
-                        "startLines": "21,22,23,24,25",
+                        "startLines": "61,67,68,72,73",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "933,991,1047,1089,1139",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "986,1042,1084,1134,1192"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\DNAXIS\\Documents\\Android\\Projeto\\app\\src\\main\\res\\values-night\\strings.xml",
-                    "from": {
-                        "startLines": "7,1,24,22,23,36,28,21,32,27,30,16,31,29,11,12,10,6,5,4,3,2,15,35,17,37,19,20,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "401,17,1050,954,1003,1496,1174,912,1370,1128,1261,691,1315,1222,528,583,484,338,271,217,140,65,652,1441,732,1553,824,865,779",
-                        "endColumns": "46,46,47,47,45,55,46,40,41,44,52,39,53,37,53,42,42,61,65,52,75,73,37,53,45,66,39,45,43",
-                        "endOffsets": "443,59,1093,997,1044,1547,1216,948,1407,1168,1309,726,1364,1255,577,621,522,395,332,265,211,134,685,1490,773,1615,859,906,818"
-                    },
-                    "to": {
-                        "startLines": "32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1727,1774,1821,1869,1917,1963,2019,2066,2107,2149,2194,2247,2287,2341,2379,2433,2476,2519,2581,2647,2700,2776,2850,2888,2942,2988,3055,3095,3141",
-                        "endColumns": "46,46,47,47,45,55,46,40,41,44,52,39,53,37,53,42,42,61,65,52,75,73,37,53,45,66,39,45,43",
-                        "endOffsets": "1769,1816,1864,1912,1958,2014,2061,2102,2144,2189,2242,2282,2336,2374,2428,2471,2514,2576,2642,2695,2771,2845,2883,2937,2983,3050,3090,3136,3180"
+                        "startOffsets": "3185,3504,3594,3744,3824",
+                        "endLines": "66,67,71,72,76",
+                        "endColumns": "12,89,12,79,12",
+                        "endOffsets": "3499,3589,3739,3819,4035"
                     }
                 }
             ]

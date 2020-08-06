@@ -62,7 +62,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -70,19 +70,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:textColor="@color/textColor"
             android:background="@color/checkbox"
-            android:text="@string/logado" />
+            android:text="@string/logado"
+            android:textColor="@color/textColor" />
 
         <TextView
             android:id="@+id/forget"
-            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
             android:layout_gravity="center"
-            android:textColor="@color/forgetPass"
-            android:text="@string/forget"/>
+            android:clickable="true"
+            android:text="@string/forget"
+            android:textColor="@color/forgetPass" />
 
     </FrameLayout>
 </LinearLayout>
