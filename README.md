@@ -1,1 +1,1 @@
-# Project only for study Java on Android
+# Project only for studying Java on Android
